@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_tpc_throttle_sensor2
+Model version                : 4.1
+Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
+XML source code generated on : Mon Jul 18 15:53:24 2022
+Model Checksum               : 935671654 1199949708 1439606612 4083691711
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Components</SHORT-NAME>
+            <ELEMENTS>
+                <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="097f4f54-ecc2-5960-13e3-ad2e03c2348c">
+                    <SHORT-NAME>ThrottleSensor2</SHORT-NAME>
+                    <PORTS>
+                        <R-PORT-PROTOTYPE UUID="f17f4974-9693-5d7f-8489-250af8e89f1f">
+                            <SHORT-NAME>TPS_HwIO</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_HwIO/Value</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_uint16</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_HwIO</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <P-PORT-PROTOTYPE UUID="fae2f144-d49c-55db-5b0c-51fa419ff43b">
+                            <SHORT-NAME>TPS_Secondary</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Secondary/Value</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_float32</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_Secondary</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="0f14a082-bc40-5960-5dd6-6a49406cc69e">
+                            <SHORT-NAME>S2LowSetPoint</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/NvM/NvMService</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="a168e7b4-c1fe-5935-c317-8ed5531e5160">
+                            <SHORT-NAME>S2StuckHigh</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticMonitor</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="05a684f0-622c-5aba-6e49-1e2425f185eb">
+                            <SHORT-NAME>S2StuckLow</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticMonitor</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="095aa962-049c-5aa9-bc1a-78bbb5197e59">
+                            <SHORT-NAME>ThrottleSensor2_IB</SHORT-NAME>
+                            <DATA-TYPE-MAPPING-REFS>
+                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/DataTypeMappings/ThrottleSensor2DataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                            </DATA-TYPE-MAPPING-REFS>
+                            <AR-TYPED-PER-INSTANCE-MEMORYS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="81ed7915-e5c8-5686-6bc9-11cee0b5148d">
+                                    <SHORT-NAME>autosar_tpc_throttl_LowSetPoint</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </AR-TYPED-PER-INSTANCE-MEMORYS>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="022b612e-d96c-544d-ff85-584dcce968fe">
+                                    <SHORT-NAME>Event_ThrottleSensor2_Step</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ThrottleSensor2/ThrottleSensor2_IB/ThrottleSensor2_Step</START-ON-EVENT-REF>
+                                    <PERIOD>0.005</PERIOD>
+                                </TIMING-EVENT>
+                            </EVENTS>
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="21ca06e5-41e0-54ee-6354-5768de594abe">
+                                    <SHORT-NAME>ThrottleSensor2_Init</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <SERVER-CALL-POINTS>
+                                        <ASYNCHRONOUS-SERVER-CALL-POINT UUID="4ebcee86-5562-5ec8-0834-243a7a7bdfa6">
+                                            <SHORT-NAME>SC_S2LowSetPoint_ReadBlock</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensor2/S2LowSetPoint</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/NvM/NvMService/ReadBlock</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1</TIMEOUT>
+                                        </ASYNCHRONOUS-SERVER-CALL-POINT>
+                                    </SERVER-CALL-POINTS>
+                                    <SYMBOL>ThrottleSensor2_Init</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="307353b6-71b7-598b-ce97-5e1a3a32495b">
+                                    <SHORT-NAME>ThrottleSensor2_Step</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="26ea6cd9-1043-55da-c345-617d94d47f0d">
+                                            <SHORT-NAME>IN_TPS_HwIO_Value</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensor2/TPS_HwIO</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_HwIO/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="ebac7e5b-f460-5ea4-2975-a9788c3ae907">
+                                            <SHORT-NAME>OUT_TPS_Secondary_Value</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottleSensor2/TPS_Secondary</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Secondary/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <PARAMETER-ACCESSS>
+                                        <PARAMETER-ACCESS UUID="37ec13df-7a02-5920-044e-d63307e5685f">
+                                            <SHORT-NAME>SCALPRM_TPSSecondaryPercent_LkupTbl</SHORT-NAME>
+                                            <ACCESSED-PARAMETER>
+                                                <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Components/ThrottleSensor2/ThrottleSensor2_IB/TPSSecondaryPercent_LkupTbl</LOCAL-PARAMETER-REF>
+                                            </ACCESSED-PARAMETER>
+                                        </PARAMETER-ACCESS>
+                                    </PARAMETER-ACCESSS>
+                                    <SERVER-CALL-POINTS>
+                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="c7e7085c-feb7-56bc-ca04-a700760cb56a">
+                                            <SHORT-NAME>SC_S2StuckHigh_SetEventStatus</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensor2/S2StuckHigh</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticMonitor/SetEventStatus</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1.0E-06</TIMEOUT>
+                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="75ae88d2-942d-5ca8-fe63-efd421829b08">
+                                            <SHORT-NAME>SC_S2StuckLow_SetEventStatus</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensor2/S2StuckLow</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticMonitor/SetEventStatus</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>1.0E-06</TIMEOUT>
+                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                    </SERVER-CALL-POINTS>
+                                    <SYMBOL>ThrottleSensor2_Step</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SHARED-PARAMETERS>
+                                <PARAMETER-DATA-PROTOTYPE UUID="0bf51ec7-f1e6-5cd4-5040-01b8f26bbe46">
+                                    <SHORT-NAME>TPSSecondaryPercent_LkupTbl</SHORT-NAME>
+                                    <CATEGORY>CURVE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Appl_TPSSecondaryPercent_LkupTbl</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <CONSTANT-REFERENCE>
+                                            <SHORT-LABEL>TPSSecondaryPercent_LkupTbl</SHORT-LABEL>
+                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/DataTypes/Constants/TPSSecondaryPercent_LkupTbl</CONSTANT-REF>
+                                        </CONSTANT-REFERENCE>
+                                    </INIT-VALUE>
+                                </PARAMETER-DATA-PROTOTYPE>
+                            </SHARED-PARAMETERS>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model ctrl2_1
+Model version                : 1.44
+Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
+XML source code generated on : Mon Jul 18 15:52:57 2022
+Model Checksum               : 677785096 3002766651 2727922532 1970996325
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>DataTypes</SHORT-NAME>
+            <ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE UUID="f4ac7b97-ae1a-551d-d37f-5007b0117d34">
+                    <SHORT-NAME>Double</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="8a60e6cd-194a-5b3d-e01d-fe285c26fc87">
+                    <SHORT-NAME>Float</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float32</BASE-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="15719882-5f5a-50d7-346d-61771b411703">
+                    <SHORT-NAME>MyStruct</SHORT-NAME>
+                    <CATEGORY>STRUCTURE</CATEGORY>
+                    <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="4b25b9a2-39ba-5dfc-ba4d-3f853a96999c">
+                            <SHORT-NAME>N2</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/UInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="cb5c1d43-e3dc-5b82-060c-3b2a91de7f07">
+                            <SHORT-NAME>N1</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/UInt32</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="6f22c570-7611-56d4-a849-b837f06d9818">
+                            <SHORT-NAME>BP2</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/rt_Array_Float_4</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="9d4a1f47-2f5d-588e-0bcc-b80b7fc5ca64">
+                            <SHORT-NAME>BP1</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/rt_Array_Float_3</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="083e230e-ad98-5f8e-8a9b-a04fb3c2b941">
+                            <SHORT-NAME>Table</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/rt_Array_Double_12</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    </SUB-ELEMENTS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="be80c865-b012-5c3e-cfc9-b5382024263c">
+                    <SHORT-NAME>UInt32</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint32</BASE-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="2eb00bd5-2ca3-58f3-7ec7-9a773f952bdb">
+                    <SHORT-NAME>rt_Array_Float_4</SHORT-NAME>
+                    <CATEGORY>ARRAY</CATEGORY>
+                    <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="1f7d113f-18be-55e0-538d-2f24455a979b">
+                            <SHORT-NAME>rt_Array_Float_4</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <ARRAY-SIZE>4</ARRAY-SIZE>
+                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Float</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    </SUB-ELEMENTS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="5ed2a00a-e2f2-55b7-3455-3d671079a16d">
+                    <SHORT-NAME>rt_Array_Float_3</SHORT-NAME>
+                    <CATEGORY>ARRAY</CATEGORY>
+                    <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="675f0403-d7c2-56cc-7d6d-4954ef71b4e6">
+                            <SHORT-NAME>rt_Array_Float_3</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <ARRAY-SIZE>3</ARRAY-SIZE>
+                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Float</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    </SUB-ELEMENTS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="17d37808-ee7b-5d38-2fc0-fdc8f43ca849">
+                    <SHORT-NAME>rt_Array_Double_12</SHORT-NAME>
+                    <CATEGORY>ARRAY</CATEGORY>
+                    <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="7fd2685a-32a7-5636-aaaf-21bdbbbe9f7e">
+                            <SHORT-NAME>rt_Array_Double_12</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <ARRAY-SIZE>12</ARRAY-SIZE>
+                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    </SUB-ELEMENTS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <IMPLEMENTATION-DATA-TYPE UUID="514897a0-e477-5d95-958d-945f59a80688">
+                    <SHORT-NAME>UInt8</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+            </ELEMENTS>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ApplDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="20af8ec6-ee92-5ba5-c8aa-e6607f423403">
+                            <SHORT-NAME>Appl_my2d_LkupTbl</SHORT-NAME>
+                            <CATEGORY>MAP</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <SW-CALPRM-AXIS-SET>
+                                            <SW-CALPRM-AXIS>
+                                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                <CATEGORY>STD_AXIS</CATEGORY>
+                                                <SW-AXIS-INDIVIDUAL>
+                                                    <INPUT-VARIABLE-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Float</INPUT-VARIABLE-TYPE-REF>
+                                                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                                    <SW-MAX-AXIS-POINTS>4</SW-MAX-AXIS-POINTS>
+                                                    <SW-MIN-AXIS-POINTS>4</SW-MIN-AXIS-POINTS>
+                                                    <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplDataTypes/DataConstrs/DC_Float</DATA-CONSTR-REF>
+                                                </SW-AXIS-INDIVIDUAL>
+                                            </SW-CALPRM-AXIS>
+                                            <SW-CALPRM-AXIS>
+                                                <SW-AXIS-INDEX>2</SW-AXIS-INDEX>
+                                                <CATEGORY>STD_AXIS</CATEGORY>
+                                                <SW-AXIS-INDIVIDUAL>
+                                                    <INPUT-VARIABLE-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Float</INPUT-VARIABLE-TYPE-REF>
+                                                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                                    <SW-MAX-AXIS-POINTS>3</SW-MAX-AXIS-POINTS>
+                                                    <SW-MIN-AXIS-POINTS>3</SW-MIN-AXIS-POINTS>
+                                                    <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplDataTypes/DataConstrs/DC_Float</DATA-CONSTR-REF>
+                                                </SW-AXIS-INDIVIDUAL>
+                                            </SW-CALPRM-AXIS>
+                                        </SW-CALPRM-AXIS-SET>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplDataTypes/DataConstrs/DC_Double</DATA-CONSTR-REF>
+                                        <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/DataTypes/SwRecordLayouts/IntMap_f32f32_f64</SW-RECORD-LAYOUT-REF>
+                                        <VALUE-AXIS-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Double</VALUE-AXIS-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="d1c333a0-5325-5dad-083d-e9f050bada26">
+                            <SHORT-NAME>Double</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplDataTypes/DataConstrs/DC_Double</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="c6688ae0-20be-5c8f-536b-88de3f144569">
+                            <SHORT-NAME>Float</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/DataTypes/ApplDataTypes/DataConstrs/DC_Float</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                    </ELEMENTS>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>DataConstrs</SHORT-NAME>
+                            <ELEMENTS>
+                                <DATA-CONSTR UUID="f0f6c5f1-ab19-5448-5abe-62835045c0be">
+                                    <SHORT-NAME>DC_Double</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="0163e808-4575-5b6f-97a1-1e7f418015b1">
+                                    <SHORT-NAME>DC_Float</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <PHYS-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                                <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            </PHYS-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <COMPU-METHOD UUID="161af1cf-01ee-5cd4-6218-71fd0a0643ec">
+                            <SHORT-NAME>Identcl</SHORT-NAME>
+                            <CATEGORY>IDENTICAL</CATEGORY>
+                            <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                        </COMPU-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Constants</SHORT-NAME>
+                    <ELEMENTS>
+                        <CONSTANT-SPECIFICATION UUID="ecf458d8-8b96-507c-cd0f-267d7f2504ea">
+                            <SHORT-NAME>my2d_LkupTbl</SHORT-NAME>
+                            <VALUE-SPEC>
+                                <APPLICATION-VALUE-SPECIFICATION>
+                                    <SHORT-LABEL>my2d_LkupTbl</SHORT-LABEL>
+                                    <CATEGORY>MAP</CATEGORY>
+                                    <SW-AXIS-CONTS>
+                                        <SW-AXIS-CONT>
+                                            <CATEGORY>STD_AXIS</CATEGORY>
+                                            <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                            <SW-ARRAYSIZE>
+                                                <V>4</V>
+                                            </SW-ARRAYSIZE>
+                                            <SW-VALUES-PHYS>
+                                                <V>1</V>
+                                                <V>2</V>
+                                                <V>3</V>
+                                                <V>4</V>
+                                            </SW-VALUES-PHYS>
+                                        </SW-AXIS-CONT>
+                                        <SW-AXIS-CONT>
+                                            <CATEGORY>STD_AXIS</CATEGORY>
+                                            <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                            <SW-AXIS-INDEX>2</SW-AXIS-INDEX>
+                                            <SW-ARRAYSIZE>
+                                                <V>3</V>
+                                            </SW-ARRAYSIZE>
+                                            <SW-VALUES-PHYS>
+                                                <V>1</V>
+                                                <V>2</V>
+                                                <V>3</V>
+                                            </SW-VALUES-PHYS>
+                                        </SW-AXIS-CONT>
+                                    </SW-AXIS-CONTS>
+                                    <SW-VALUE-CONT>
+                                        <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+                                        <SW-ARRAYSIZE>
+                                            <V>12</V>
+                                        </SW-ARRAYSIZE>
+                                        <SW-VALUES-PHYS>
+                                            <V>2</V>
+                                            <V>3</V>
+                                            <V>4</V>
+                                            <V>3</V>
+                                            <V>4</V>
+                                            <V>5</V>
+                                            <V>4</V>
+                                            <V>5</V>
+                                            <V>6</V>
+                                            <V>5</V>
+                                            <V>6</V>
+                                            <V>7</V>
+                                        </SW-VALUES-PHYS>
+                                    </SW-VALUE-CONT>
+                                </APPLICATION-VALUE-SPECIFICATION>
+                            </VALUE-SPEC>
+                        </CONSTANT-SPECIFICATION>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>DataTypeMappings</SHORT-NAME>
+                    <ELEMENTS>
+                        <DATA-TYPE-MAPPING-SET UUID="18e89fdc-ef11-5dd6-c86d-88d5ed070601">
+                            <SHORT-NAME>ctrl2DataTypeMappingsSet</SHORT-NAME>
+                            <DATA-TYPE-MAPS>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Double</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Float</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Float</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                                <DATA-TYPE-MAP>
+                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Appl_my2d_LkupTbl</APPLICATION-DATA-TYPE-REF>
+                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/MyStruct</IMPLEMENTATION-DATA-TYPE-REF>
+                                </DATA-TYPE-MAP>
+                            </DATA-TYPE-MAPS>
+                        </DATA-TYPE-MAPPING-SET>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-ADDR-METHOD UUID="fde3fb45-b3df-547d-de4c-bb6fcd764bd1">
+                            <SHORT-NAME>CODE</SHORT-NAME>
+                            <SECTION-TYPE>CODE</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD UUID="6e72c189-7482-53ed-d0da-228edca7a632">
+                            <SHORT-NAME>CONST</SHORT-NAME>
+                            <SECTION-TYPE>CONST</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                        <SW-ADDR-METHOD UUID="3760de4a-0ba8-5c35-5c15-181d49758078">
+                            <SHORT-NAME>VAR</SHORT-NAME>
+                            <SECTION-TYPE>VAR</SECTION-TYPE>
+                        </SW-ADDR-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE UUID="d305b6b5-5dd4-5a3c-5c08-b6d381358ed3">
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="f55220c8-aef6-533e-91c3-80a5d2f7e109">
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="1100ac55-608a-5acd-edeb-303f219b7ba6">
+                            <SHORT-NAME>uint32</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="5a7bfd5e-3aa6-5694-08bb-781d44c6d683">
+                            <SHORT-NAME>uint8</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>SwRecordLayouts</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-RECORD-LAYOUT UUID="a7699053-7992-5d73-be05-82dbdc0b43d5">
+                            <SHORT-NAME>IntMap_f32f32_f64</SHORT-NAME>
+                            <SW-RECORD-LAYOUT-GROUP>
+                                <SHORT-LABEL>IntMap_f32f32_f64</SHORT-LABEL>
+                                <SW-RECORD-LAYOUT-V>
+                                    <SHORT-LABEL>Nx</SHORT-LABEL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint32</BASE-TYPE-REF>
+                                    <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                                    <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                                </SW-RECORD-LAYOUT-V>
+                                <SW-RECORD-LAYOUT-V>
+                                    <SHORT-LABEL>Ny</SHORT-LABEL>
+                                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint32</BASE-TYPE-REF>
+                                    <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                                    <SW-RECORD-LAYOUT-V-PROP>COUNT</SW-RECORD-LAYOUT-V-PROP>
+                                </SW-RECORD-LAYOUT-V>
+                                <SW-RECORD-LAYOUT-GROUP>
+                                    <SHORT-LABEL>X</SHORT-LABEL>
+                                    <CATEGORY>INDEX_INCR</CATEGORY>
+                                    <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                    <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                    <SW-RECORD-LAYOUT-V>
+                                        <SHORT-LABEL>VALUE</SHORT-LABEL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                                        <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                    </SW-RECORD-LAYOUT-V>
+                                </SW-RECORD-LAYOUT-GROUP>
+                                <SW-RECORD-LAYOUT-GROUP>
+                                    <SHORT-LABEL>Y</SHORT-LABEL>
+                                    <CATEGORY>INDEX_INCR</CATEGORY>
+                                    <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                    <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                    <SW-RECORD-LAYOUT-V>
+                                        <SHORT-LABEL>VALUE</SHORT-LABEL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                                        <SW-RECORD-LAYOUT-V-AXIS>2</SW-RECORD-LAYOUT-V-AXIS>
+                                        <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                    </SW-RECORD-LAYOUT-V>
+                                </SW-RECORD-LAYOUT-GROUP>
+                                <SW-RECORD-LAYOUT-GROUP>
+                                    <SHORT-LABEL>Val</SHORT-LABEL>
+                                    <CATEGORY>COLUMN_DIR</CATEGORY>
+                                    <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                    <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                    <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                    <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                    <SW-RECORD-LAYOUT-GROUP>
+                                        <SHORT-LABEL>Val</SHORT-LABEL>
+                                        <SW-RECORD-LAYOUT-GROUP-AXIS>2</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                        <SW-RECORD-LAYOUT-GROUP-INDEX>Y</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                        <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                        <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                        <SW-RECORD-LAYOUT-V>
+                                            <SHORT-LABEL>Val</SHORT-LABEL>
+                                            <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                                            <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                                            <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                            <SW-RECORD-LAYOUT-V-INDEX>X Y</SW-RECORD-LAYOUT-V-INDEX>
+                                        </SW-RECORD-LAYOUT-V>
+                                    </SW-RECORD-LAYOUT-GROUP>
+                                </SW-RECORD-LAYOUT-GROUP>
+                            </SW-RECORD-LAYOUT-GROUP>
+                        </SW-RECORD-LAYOUT>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Units</SHORT-NAME>
+                    <ELEMENTS>
+                        <UNIT UUID="33dac0bd-037e-531e-cfc4-57f02352dde0">
+                            <SHORT-NAME>NoUnit</SHORT-NAME>
+                            <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+                            <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
+                        </UNIT>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

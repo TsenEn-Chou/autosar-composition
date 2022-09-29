@@ -1,0 +1,10 @@
+#/Users/tsen/Documents/MATLAB/Examples/R2022a/autosarblockset/AuthorAUTOSARCompositionsInArchitectureModelExample/autosar_tpc_throttle_sensor1_autosar_rtw/stub/Rte_ThrottleSensor1.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_IRead_ThrottleSensor1_Step_TPS_HwIO_Value
+-Rte_IWrite_ThrottleSensor1_Step_TPS_Primary_Value
+-Rte_IWriteRef_ThrottleSensor1_Step_TPS_Primary_Value
+-Rte_Call_S1LowSetPoint_ReadBlock
+-Rte_Call_S1StuckHigh_SetEventStatus
+-Rte_Call_S1StuckLow_SetEventStatus
+-Rte_CData_TPSPrimaryPercent_LkupTbl
+-Rte_Pim_autosar_tpc_throttl_LowSetPoint

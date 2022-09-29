@@ -1,0 +1,2065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_tpc_composition
+Model version                : 5.9
+Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
+XML source code generated on : Mon Jul 18 15:53:43 2022
+Model Checksum               : 2079139332 1027854283 3509626394 176740179
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR</SHORT-NAME>
+            <ELEMENTS>
+                <UNIT UUID="DCE:ba7362ed-95f3-69e2-a15e-7b8e292bd1b9">
+                    <SHORT-NAME>NoUnit</SHORT-NAME>
+                    <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+                    <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
+                </UNIT>
+                <COMPU-METHOD UUID="b96a716c-61b0-4f4c-84b3-a0b234951b3a">
+                    <SHORT-NAME>DefaultBooleanCompuMethod</SHORT-NAME>
+                    <CATEGORY>TEXTTABLE</CATEGORY>
+                    <COMPU-INTERNAL-TO-PHYS>
+                        <COMPU-SCALES>
+                            <COMPU-SCALE>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                <COMPU-CONST>
+                                    <VT>false</VT>
+                                </COMPU-CONST>
+                            </COMPU-SCALE>
+                            <COMPU-SCALE>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                <COMPU-CONST>
+                                    <VT>true</VT>
+                                </COMPU-CONST>
+                            </COMPU-SCALE>
+                        </COMPU-SCALES>
+                    </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <DATA-CONSTR UUID="fd0cdf1d-8930-4aa4-bd5b-86159ac1b5db">
+                    <SHORT-NAME>dc_22781290</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">15</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="21e19160-3215-4517-8824-6ca6143071f2">
+                    <SHORT-NAME>UInt4</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_22781290</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="a33b36db-4098-466f-9f99-0a7e57bfe0af">
+                    <SHORT-NAME>dc_29072876</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-8</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="a2ea137e-405d-4a16-9d59-b68ea2dbef07">
+                    <SHORT-NAME>SInt4</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_29072876</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="6f2549e9-1bfd-47ab-9887-ad8515d3e2c0">
+                    <SHORT-NAME>dc_8190213</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="030205b5-b11b-4dc7-af7f-9cb013eae848">
+                    <SHORT-NAME>UInt8</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_8190213</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="e3ea34cc-f9d6-4eea-b20d-1660e601bfcd">
+                    <SHORT-NAME>dc_12643284</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-128</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">127</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="0b03e748-efc8-4b84-a2c0-bf686d4eec16">
+                    <SHORT-NAME>SInt8</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_12643284</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="e1347c8f-7abe-4b9d-b30a-6d22f5f343c7">
+                    <SHORT-NAME>dc_29013751</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="12f2a90e-252a-40bb-bb41-31c5a818bbb0">
+                    <SHORT-NAME>UInt16</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_29013751</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="7528cb87-46f5-4ac5-bd3a-2bd182375d4b">
+                    <SHORT-NAME>dc_21118227</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-32768</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32767</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="faf1e6e6-ee33-464d-add1-671ec5b1ab0f">
+                    <SHORT-NAME>SInt16</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_21118227</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="5eabd177-5223-4cd7-9752-5960eea2835e">
+                    <SHORT-NAME>dc_28814878</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="e0c329d8-3aa3-45fb-890e-e82c9af0b313">
+                    <SHORT-NAME>UInt32</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_28814878</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="ec073bf2-8490-455a-bd9a-bdc4d06f86dc">
+                    <SHORT-NAME>dc_539291</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2147483648</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="4741b191-7a87-4fe3-bb76-e70077cb3e2e">
+                    <SHORT-NAME>SInt32</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_539291</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="d58d16da-0dd2-4f17-bbaa-e7f23a9b77c2">
+                    <SHORT-NAME>dc_4170089</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="bba9b788-c276-4215-b88d-5ca9239ce496">
+                    <SHORT-NAME>Float_with_NaN</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_4170089</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="abd94e4a-e0a4-4fb2-acbd-ed5e861c135a">
+                    <SHORT-NAME>dc_25047333</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="f58727b6-20f2-41d7-ae83-15acec5ee022">
+                    <SHORT-NAME>Float</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_25047333</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="a58a0836-1deb-4b93-b9f7-ba2f58e2a153">
+                    <SHORT-NAME>dc_30186203</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="2d6dbf0d-159f-4171-93af-624e5ee4b252">
+                    <SHORT-NAME>Double_with_NaN</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_30186203</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <DATA-CONSTR UUID="5d83060d-db06-499f-b56f-a521115d1b27">
+                    <SHORT-NAME>dc_30066103</SHORT-NAME>
+                    <DATA-CONSTR-RULES>
+                        <DATA-CONSTR-RULE>
+                            <PHYS-CONSTRS>
+                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                            </PHYS-CONSTRS>
+                        </DATA-CONSTR-RULE>
+                    </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="38a0a635-96d4-4e4e-96f0-ad195e4340d3">
+                    <SHORT-NAME>Double</SHORT-NAME>
+                    <CATEGORY>VALUE</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_30066103</DATA-CONSTR-REF>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+                <APPLICATION-PRIMITIVE-DATA-TYPE UUID="bbc29337-13d2-43b0-9235-949849883dca">
+                    <SHORT-NAME>Boolean</SHORT-NAME>
+                    <DESC>
+                        <L-2 L="FOR-ALL">Boolean has the value space required to support the mathematical concept of binary-valued logic: {TRUE, FALSE}.</L-2>
+                    </DESC>
+                    <CATEGORY>BOOLEAN</CATEGORY>
+                    <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                    </SW-DATA-DEF-PROPS>
+                </APPLICATION-PRIMITIVE-DATA-TYPE>
+            </ELEMENTS>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Services</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>Dem</SHORT-NAME>
+                            <ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE UUID="c77663b2-8ab6-49c0-9d1b-09a58334c0f4">
+                                    <SHORT-NAME>Dem_EventStatusType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/Dem/cm_Dem_EventStatusType</COMPU-METHOD-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <COMPU-METHOD UUID="54ff39b5-23e0-4438-927d-b6773abaf8b1">
+                                    <SHORT-NAME>cm_Dem_EventStatusType</SHORT-NAME>
+                                    <CATEGORY>TEXTTABLE</CATEGORY>
+                                    <UNIT-REF DEST="UNIT">/AUTOSAR/NoUnit</UNIT-REF>
+                                    <COMPU-INTERNAL-TO-PHYS>
+                                        <COMPU-SCALES>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_EVENT_STATUS_PASSED</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_EVENT_STATUS_FAILED</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_EVENT_STATUS_PREPASSED</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_EVENT_STATUS_PREFAILED</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                        </COMPU-SCALES>
+                                    </COMPU-INTERNAL-TO-PHYS>
+                                </COMPU-METHOD>
+                                <IMPLEMENTATION-DATA-TYPE UUID="DCE:f51972c0-dbdd-624f-b47e-1e1829e2fdba">
+                                    <SHORT-NAME>Dem_EventStatusExtendedType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/Dem/cm_Dem_EventStatusExtendedType</COMPU-METHOD-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <COMPU-METHOD UUID="df73cf6a-cbd1-4130-84b4-e230ae1f5573">
+                                    <SHORT-NAME>cm_Dem_EventStatusExtendedType</SHORT-NAME>
+                                    <CATEGORY>TEXTTABLE</CATEGORY>
+                                    <COMPU-INTERNAL-TO-PHYS>
+                                        <COMPU-SCALES>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_TF</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_TFTOC</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">4</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_PDTC</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">8</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">8</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_CDTC</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">16</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">16</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_TNCSLC</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">32</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">32</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_TFSLC</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">64</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">64</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_TNCTOC</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">128</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">128</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_UDS_STATUS_WIR</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                        </COMPU-SCALES>
+                                    </COMPU-INTERNAL-TO-PHYS>
+                                </COMPU-METHOD>
+                                <IMPLEMENTATION-DATA-TYPE UUID="DCE:68da0974-655f-6216-9b15-326ad34712a2">
+                                    <SHORT-NAME>Dem_DTCFormatType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/Dem/cm_Dem_DTCFormatType</COMPU-METHOD-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <COMPU-METHOD UUID="64dbafe8-a18c-44f2-b1de-8239aeaa9d76">
+                                    <SHORT-NAME>cm_Dem_DTCFormatType</SHORT-NAME>
+                                    <CATEGORY>TEXTTABLE</CATEGORY>
+                                    <COMPU-INTERNAL-TO-PHYS>
+                                        <COMPU-SCALES>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_DTC_FORMAT_OBD</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_DTC_FORMAT_UDS</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                        </COMPU-SCALES>
+                                    </COMPU-INTERNAL-TO-PHYS>
+                                </COMPU-METHOD>
+                                <IMPLEMENTATION-DATA-TYPE UUID="DCE:482a0974-655f-6216-9b15-326ad34712a2">
+                                    <SHORT-NAME>Dem_IumprDenomCondStatusType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/Dem/cm_Dem_IumprDenomCondStatusType</COMPU-METHOD-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <COMPU-METHOD UUID="44dbaf28-a18c-44f2-b1de-8239aeaa9d76">
+                                    <SHORT-NAME>cm_Dem_IumprDenomCondStatusType</SHORT-NAME>
+                                    <CATEGORY>TEXTTABLE</CATEGORY>
+                                    <COMPU-INTERNAL-TO-PHYS>
+                                        <COMPU-SCALES>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_IUMPR_DEN_STATUS_NOT_REACHED</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_IUMPR_DEN_STATUS_REACHED</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_IUMPR_DEN_STATUS_INHIBITED</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                        </COMPU-SCALES>
+                                    </COMPU-INTERNAL-TO-PHYS>
+                                </COMPU-METHOD>
+                                <IMPLEMENTATION-DATA-TYPE UUID="DCE:58ba1974-655f-6216-9b15-326ad34712a2">
+                                    <SHORT-NAME>Dem_DTRControlType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/Dem/cm_Dem_DTRControlType</COMPU-METHOD-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <COMPU-METHOD UUID="54dbafe8-a14c-44f2-b1de-8239aeaa9d76">
+                                    <SHORT-NAME>cm_Dem_DTRControlType</SHORT-NAME>
+                                    <CATEGORY>TEXTTABLE</CATEGORY>
+                                    <COMPU-INTERNAL-TO-PHYS>
+                                        <COMPU-SCALES>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_DTR_CTL_NORMAL</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_DTR_CTL_NO_MAX</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_DTR_CTL_NO_MIN</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_DTR_CTL_RESET</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">4</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_DTR_CTL_INVISIBLE</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                        </COMPU-SCALES>
+                                    </COMPU-INTERNAL-TO-PHYS>
+                                </COMPU-METHOD>
+                                <IMPLEMENTATION-DATA-TYPE UUID="DCE:78ba0974-655f-6216-9b15-326ad34712a2">
+                                    <SHORT-NAME>Dem_IndicatorStatusType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/Dem/cm_Dem_IndicatorStatusType</COMPU-METHOD-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <COMPU-METHOD UUID="74dbafe8-a18c-44f2-b1de-8239aeaa9d76">
+                                    <SHORT-NAME>cm_Dem_IndicatorStatusType</SHORT-NAME>
+                                    <CATEGORY>TEXTTABLE</CATEGORY>
+                                    <COMPU-INTERNAL-TO-PHYS>
+                                        <COMPU-SCALES>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_OFF</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_CONTINUOUS</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">2</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_BLINKING</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">3</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">3</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_BLINK_CONT</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">4</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_SLOW_FLASH</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">5</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">5</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_FAST_FLASH</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">6</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">6</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_ON_DEMAND</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">7</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">7</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_INDICATOR_SHORT</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                        </COMPU-SCALES>
+                                    </COMPU-INTERNAL-TO-PHYS>
+                                </COMPU-METHOD>
+                                <IMPLEMENTATION-DATA-TYPE UUID="DCE:28ba0974-655f-6216-9b15-326ad34712a2">
+                                    <SHORT-NAME>Dem_OperationCycleStateType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/Dem/cm_Dem_OperationCycleStateType</COMPU-METHOD-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <COMPU-METHOD UUID="24dbafe8-a18c-44f2-b1de-8239aeaa9d76">
+                                    <SHORT-NAME>cm_Dem_OperationCycleStateType</SHORT-NAME>
+                                    <CATEGORY>TEXTTABLE</CATEGORY>
+                                    <COMPU-INTERNAL-TO-PHYS>
+                                        <COMPU-SCALES>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_CYCLE_STATE_START</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                            <COMPU-SCALE>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                <COMPU-CONST>
+                                                    <VT>DEM_CYCLE_STATE_END</VT>
+                                                </COMPU-CONST>
+                                            </COMPU-SCALE>
+                                        </COMPU-SCALES>
+                                    </COMPU-INTERNAL-TO-PHYS>
+                                </COMPU-METHOD>
+                                <CLIENT-SERVER-INTERFACE UUID="b715881b-afd2-499e-ac90-560bb8106612">
+                                    <SHORT-NAME>DiagnosticMonitor</SHORT-NAME>
+                                    <DESC>
+                                        <L-2 L="FOR-ALL"/>
+                                    </DESC>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c574157-cdf1-4937-b04f-1ed95638e685">
+                                            <SHORT-NAME>SetEventStatus</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-2aeb-450a-914a-a9e86eb4eec3">
+                                                    <SHORT-NAME>EventStatus</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_EventStatusType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="7c412111-4ab4-4a79-91be-9c3eef7545c9">
+                                            <SHORT-NAME>ResetEventStatus</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="a659507b-b675-4d3b-9242-6c43b4a4ef3f">
+                                            <SHORT-NAME>PrestoreFreezeFrame</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="7ac423cb-4436-4b6e-94c5-47b92eb17488">
+                                            <SHORT-NAME>ClearPrestoredFreezeFrame</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="d523981d-ab72-46fc-8eeb-f56a24064e04">
+                                            <SHORT-NAME>SetEventDisabled</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticMonitor/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="556cead5-620f-4174-8718-8b3cb3ee8e47">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1c7bbf48-2950-49aa-8296-edca9e44d272">
+                                    <SHORT-NAME>CallbackEventStatusChange</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="91081fc0-54b1-4121-81a0-c0b6ab186d75">
+                                            <SHORT-NAME>EventStatusChanged</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="14dd24cc-2b45-4d0f-95f7-d96063313a54">
+                                                    <SHORT-NAME>EventStatusOld</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_EventStatusExtendedType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="f2a689d1-efc8-4ec6-bedd-56824fbcd0f3">
+                                                    <SHORT-NAME>EventStatusNew</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_EventStatusExtendedType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/CallbackEventStatusChange/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-1228-4faf-99fb-2ddcaa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="b0c654b8-275b-44f6-9a12-5499b30eacc2">
+                                    <SHORT-NAME>DiagnosticInfo</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="5ac3f3fa-3f66-44fd-8362-2247ddda528c">
+                                            <SHORT-NAME>GetEventStatus</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="05fe8f5b-a95c-4bb5-9550-412e9f2c791b">
+                                                    <SHORT-NAME>EventStatusExtended</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_EventStatusExtendedType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="6993459d-8ccd-4174-8ff5-1edc4131680c">
+                                            <SHORT-NAME>GetEventFailed</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="aaf34c56-a445-49b9-898d-6e0fb25c0931">
+                                                    <SHORT-NAME>EventFailed</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="2e0276e1-aabd-4e90-90bf-967b98c35b84">
+                                            <SHORT-NAME>GetEventTested</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="f8e0d2e6-4de5-446e-8832-183cbc1ea9ef">
+                                                    <SHORT-NAME>EventTested</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="35e4412c-62e4-4af6-a61e-521ca8e72efa">
+                                            <SHORT-NAME>GetDTCOfEvent</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="d3b4357d-d013-4ac1-9671-3d8832102095">
+                                                    <SHORT-NAME>DTCFormat</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_DTCFormatType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="43d977db-1fe2-437b-bf17-94236a427c9a">
+                                                    <SHORT-NAME>DTCOfEvent</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint32</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/DEM_E_NO_DTC_AVAILABLE</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="64dda271-ddf2-48b0-98c2-31c1e15ecf35">
+                                            <SHORT-NAME>GetFaultDetectionCounter</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="cb694f9e-6c11-40cf-85f4-331d54fc2b43">
+                                                    <SHORT-NAME>FaultDetectionCounter</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="5a7f59b2-c5ce-4c70-bfc6-0cb27cd81ba8">
+                                            <SHORT-NAME>GetEventExtendedDataRecord</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="c3b42180-6ff3-4a68-adf7-f444d8a4b337">
+                                                    <SHORT-NAME>RecordNumber</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="0616abbc-a751-4285-8981-bc1148f10e48">
+                                                    <SHORT-NAME>DestBuffer</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_MaxDataValueType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="faa94293-50e6-4b5a-a3ef-bff86730ff0a">
+                                            <SHORT-NAME>GetEventFreezeFrameData</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="54b4374e-2aae-4157-b7e6-a92c7f021b86">
+                                                    <SHORT-NAME>RecordNumber</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="b8f11224-d6fe-42f8-80b4-49ea17c23f21">
+                                                    <SHORT-NAME>ReportTotalRecord</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="64af9ae8-2d02-4f0e-ad29-2753832f931e">
+                                                    <SHORT-NAME>DataId</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint16</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="ace706d2-23e6-4881-b578-4bd646c2db7c">
+                                                    <SHORT-NAME>DestBuffer</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_MaxDataValueType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DiagnosticInfo/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="d06c8433-c58c-4397-8fc2-323bd352cb6e">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                        <APPLICATION-ERROR UUID="dc41c3e2-6142-4e7c-a5bc-22ed96ff52cf">
+                                            <SHORT-NAME>DEM_E_NO_DTC_AVAILABLE</SHORT-NAME>
+                                            <ERROR-CODE>2</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="1bed356a-d7c8-4212-b5b4-61bb3b00e976">
+                                    <SHORT-NAME>Dem_MaxDataValueType</SHORT-NAME>
+                                    <CATEGORY>ARRAY</CATEGORY>
+                                    <SUB-ELEMENTS>
+                                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="50f8cca1-0064-5d3c-0ddd-8d217007534e">
+                                            <SHORT-NAME>Dem_MaxDataValueType</SHORT-NAME>
+                                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                            <ARRAY-SIZE>4</ARRAY-SIZE>
+                                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                    </SUB-ELEMENTS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <CLIENT-SERVER-INTERFACE UUID="1715881b-afd2-499e-ac90-560bb8146612">
+                                    <SHORT-NAME>PfcCycleQualified</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c412111-1ab4-4a79-91be-9c3eef7545c9">
+                                            <SHORT-NAME>SetPfcCycleQualified</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/PfcCycleQualified/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="7c412111-22b4-4a79-91be-9c3eef7545c9">
+                                            <SHORT-NAME>GetPfcCycleQualified</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/PfcCycleQualified/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-1278-4faf-99fb-2ddcaa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="2715881b-afd2-499e-ac91-560bb8146612">
+                                    <SHORT-NAME>IUMPRDenominatorCondition</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c574157-cdf1-5531-b04f-1ed95638e685">
+                                            <SHORT-NAME>SetIUMPRDenCondition</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-254b-450a-914a-a9e86eb4eec3">
+                                                    <SHORT-NAME>ConditionStatus</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_IumprDenomCondStatusType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/IUMPRDenominatorCondition/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="7c334157-cdf1-5537-b04f-1ed95638e685">
+                                            <SHORT-NAME>GetIUMPRDenCondition</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e33f53ff-255b-450a-914a-a9e86eb4eec3">
+                                                    <SHORT-NAME>ConditionStatus</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_IumprDenomCondStatusType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/IUMPRDenominatorCondition/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb18823a-1278-4faf-99fb-2ddcba717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1713881b-afd2-499e-ac90-560bb8146612">
+                                    <SHORT-NAME>IUMPRNumerator</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c412111-33b4-4a79-91be-9c3eef7545c9">
+                                            <SHORT-NAME>RepIUMPRFaultDetect</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/IUMPRNumerator/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98822a-1278-4faf-99fb-2ddcaa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1715881b-afd2-499e-ac90-560bb8136612">
+                                    <SHORT-NAME>IUMPRDenominator</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c412111-44b4-4a79-91be-9c3eef7545c9">
+                                            <SHORT-NAME>RepIUMPRDenLock</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/IUMPRDenominator/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="7c412111-55b4-4a79-91be-9c3eef7545c9">
+                                            <SHORT-NAME>RepIUMPRDenRelease</SHORT-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/IUMPRDenominator/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-1278-4faf-99fb-2ddcaa717378">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1715884b-afd2-499e-ac90-560bb8146612">
+                                    <SHORT-NAME>DTRCentralReport</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c533157-cdf1-5537-b04f-1ed95638e685">
+                                            <SHORT-NAME>SetDTR</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-885b-450a-914a-a9e86eb4eec3">
+                                                    <SHORT-NAME>DTRId</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint16</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-255b-450a-914a-a9e888b4eec3">
+                                                    <SHORT-NAME>TestResult</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint32</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-255b-450a-914a-a9e86224eec3">
+                                                    <SHORT-NAME>LowerLimit</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint32</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-255b-4a0a-914a-a9e86eb4eec3">
+                                                    <SHORT-NAME>Ctrlval</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_DTRControlType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/DTRCentralReport/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-4278-4faf-99fb-2ddcaa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="171531b-afd2-479e-ac90-560bb8146612">
+                                    <SHORT-NAME>EventAvailable</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c574157-cdf1-5537-454f-1ed95638e685">
+                                            <SHORT-NAME>SetEventAvailable</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-325b-450a-914a-a9e86eb4eec3">
+                                                    <SHORT-NAME>AvailableStatus</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/EventAvailable/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-1278-4fbf-99fb-2ddcaa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1715341b-afd2-499e-ac90-560bb8146612">
+                                    <SHORT-NAME>IndicatorStatus</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c555157-cdf1-5537-454f-1ed956382685">
+                                            <SHORT-NAME>GetIndicatorStatus</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-325b-450a-955a-a9e86eb43ec3">
+                                                    <SHORT-NAME>IndicatorStatus</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_IndicatorStatusType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/IndicatorStatus/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98223a-1278-4faf-92fb-2ddcaa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1715881b-afd2-432e-ac90-560bb8146612">
+                                    <SHORT-NAME>EnableCondition</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c574157-cdf1-5537-454f-1ed33638e685">
+                                            <SHORT-NAME>SetEnableCondition</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f53ff-325b-450a-914a-a9e86334eec3">
+                                                    <SHORT-NAME>ConditionFulfilled</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/EnableCondition/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-1278-4f1f-99fb-2ddcaa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1715881b-afd2-499e-ac20-560bb8146612">
+                                    <SHORT-NAME>StorageCondition</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c574157-78f1-5537-454f-1ed33638e685">
+                                            <SHORT-NAME>SetStorageCondition</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f78ff-325b-450a-914a-a9e86334eec3">
+                                                    <SHORT-NAME>ConditionFulfilled</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/StorageCondition/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-1278-4faf-99fb-2d3caa717778">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <CLIENT-SERVER-INTERFACE UUID="1715881b-afd2-499e-ac90-560bb8142212">
+                                    <SHORT-NAME>OperationCycle</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="7c574157-78f1-9937-454f-1ed33638e685">
+                                            <SHORT-NAME>SetOperationCycleState</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f78ff-325b-499a-914a-a9e86334eec3">
+                                                    <SHORT-NAME>CycleState</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_OperationCycleStateType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/OperationCycle/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="7c574257-78f1-9937-454f-1ed33638e685">
+                                            <SHORT-NAME>GetOperationCycleState</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e07f25ff-325b-499a-914a-a9e86334eec3">
+                                                    <SHORT-NAME>CycleState</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/Dem/Dem_OperationCycleStateType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/Dem/OperationCycle/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="fb98823a-1278-4faf-99fb-2ddcaa713378">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>NvM</SHORT-NAME>
+                            <ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE>
+                                    <SHORT-NAME>NvM_RequestResultType</SHORT-NAME>
+                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <CLIENT-SERVER-INTERFACE UUID="18417768-78fd-4333-befd-569ad315b976">
+                                    <SHORT-NAME>NvMService</SHORT-NAME>
+                                    <LONG-NAME>
+                                        <L-4 L="FOR-ALL"/>
+                                    </LONG-NAME>
+                                    <DESC>
+                                        <L-2 L="FOR-ALL">Covers AUTOSAR_SWS_NVRAMManager.pdf V3.2.0 R4.0 Rev 3 - NVM734</L-2>
+                                    </DESC>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="ca6ad0d5-6bdd-4fb9-9d2d-d25b463f578c">
+                                            <SHORT-NAME>GetDataIndex</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">GetDataIndex</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="ed839476-bf6f-463e-be72-427c67d0ee61">
+                                                    <SHORT-NAME>DataIndexPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DataIndexPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="d468bdaf-acb0-4036-95ba-ef65c3b97204">
+                                            <SHORT-NAME>SetDataIndex</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">SetDataIndex</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e764a790-b769-44d5-9602-0c079cbe99a7">
+                                                    <SHORT-NAME>DataIndex</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DataIndex</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="fa8c90ac-84ae-4824-96fe-4eec173a4049">
+                                            <SHORT-NAME>SetRamBlockStatus</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">SetRamBlockStatus</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e1b3b0e4-9da4-4bfb-ae59-7e0e3d1ca8b9">
+                                                    <SHORT-NAME>BlockChanged</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">BlockChanged</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="a713f9da-2210-47ad-8c9b-cdf1f6c316f2">
+                                            <SHORT-NAME>ReadBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">ReadBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="3029c1f2-d1f4-4d1a-8bca-dd455b319c61">
+                                                    <SHORT-NAME>DstPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DstPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_DstPtrType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="d6a5f7db-8807-4d5f-b0c5-071d02f10481">
+                                            <SHORT-NAME>WriteBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">WriteBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="6ba313a7-43e3-45e0-83ad-a9c47aadf6ee">
+                                                    <SHORT-NAME>SrcPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">SrcPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_DstPtrType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="658d04d4-7253-4179-b731-91a0ac34767c">
+                                            <SHORT-NAME>RestoreBlockDefaults</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">RestoreBlockDefaults</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="516cb3e9-2ceb-43f1-a59f-bf4db70b04c0">
+                                                    <SHORT-NAME>DestPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">DestPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_DstPtrType</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="9059a7e9-e573-493f-814e-60ef76f7f318">
+                                            <SHORT-NAME>EraseNvBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">EraseNvBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="98ebdc9a-ea8c-415a-9e42-5e7a62224aee">
+                                            <SHORT-NAME>InvalidateNvBlock</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">InvalidateNvBlock</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS/>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="927bfca0-c707-40d7-9de1-e7152ba30243">
+                                            <SHORT-NAME>GetErrorStatus</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="FOR-ALL">GetErrorStatus</L-4>
+                                            </LONG-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="e639fac3-0119-4275-954a-6670c5ce47f2">
+                                                    <SHORT-NAME>RequestResultPtr</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">RequestResultPtr</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/NvM/NvM_RequestResultType</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMService/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="DCE:4e860df7-fc61-6d37-89f6-6fac188f5df8">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="6efd0e99-e4e5-4bb3-94ff-72dd7cbf8ee7">
+                                    <SHORT-NAME>NvM_DstPtrType</SHORT-NAME>
+                                    <CATEGORY>DATA_REFERENCE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-POINTER-TARGET-PROPS>
+                                                    <TARGET-CATEGORY>VALUE</TARGET-CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/void</BASE-TYPE-REF>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                </SW-POINTER-TARGET-PROPS>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <CLIENT-SERVER-INTERFACE UUID="d98f711c-e91d-4653-8a48-99f50aee54af">
+                                    <SHORT-NAME>NvMAdmin</SHORT-NAME>
+                                    <IS-SERVICE>true</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="0b452ea6-e9b6-4bd3-adab-49beacf2d379">
+                                            <SHORT-NAME>SetBlockProtection</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="df465826-0031-4708-8e72-df3a08fc9f4d">
+                                                    <SHORT-NAME>ProtectionEnabled</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="FOR-ALL">ProtectionEnabled</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/AUTOSAR/Services/NvM/NvMAdmin/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="5d7e2db9-d61e-40cc-acff-4b5904631a36">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR_PlatformTypes</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>BaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Boolean</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>uint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>uint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>sint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>sint8</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>sint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>sint16</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>sint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>sint32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE UUID="DCE:336cc76e-0d98-686d-b4be-b6ab21908e9d">
+                            <SHORT-NAME>void</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>VOID</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>void</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <COMPU-METHOD>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <CATEGORY>TEXTTABLE</CATEGORY>
+                            <COMPU-INTERNAL-TO-PHYS>
+                                <COMPU-SCALES>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>FALSE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>TRUE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                </COMPU-SCALES>
+                            </COMPU-INTERNAL-TO-PHYS>
+                        </COMPU-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/float32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Boolean</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/boolean</BASE-TYPE-REF>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_PlatformTypes/CompuMethods/boolean</COMPU-METHOD-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>uint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint16</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>uint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">unsigned integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>sint8</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 8bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/sint8</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>sint16</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 16bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/sint16</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>sint32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">signed integer 32bit</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/sint32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>float64</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Double</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/float64</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

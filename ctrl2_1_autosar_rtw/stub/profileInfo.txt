@@ -1,0 +1,7 @@
+#/Users/tsen/Documents/MATLAB/Examples/R2022a/autosarblockset/AuthorAUTOSARCompositionsInArchitectureModelExample/ctrl2_1_autosar_rtw/stub/Rte_ctrl2.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_IRead_ctrl2_1_Step_InBus1_Value
+-Rte_IRead_ctrl2_1_Step_InBus2_Value
+-Rte_IWrite_ctrl2_1_Step_OutBus_Value
+-Rte_IWriteRef_ctrl2_1_Step_OutBus_Value
+-Rte_CData_my2d_LkupTbl

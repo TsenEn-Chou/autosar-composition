@@ -1,0 +1,6 @@
+#/Users/tsen/Documents/MATLAB/Examples/R2022a/autosarblockset/AuthorAUTOSARCompositionsInArchitectureModelExample/autosar_tpc_actuator_autosar_rtw/stub/Rte_Actuator.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_IRead_Actuator_Step_ThrCmd_Percent_Value
+-Rte_IWrite_Actuator_Step_ThrCmd_HwIO_Value
+-Rte_IWriteRef_Actuator_Step_ThrCmd_HwIO_Value
+-Rte_CData_HBridgeCmd_LkupTbl
