@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'ctrl2_1'.
  *
- * Model version                  : 1.44
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Jul 18 15:49:06 2022
+ * Model version                  : 2.18
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 16:34:03 2022
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -19,9 +19,7 @@
 
 #ifndef RTW_HEADER_ctrl2_1_types_h_
 #define RTW_HEADER_ctrl2_1_types_h_
-#include "MyStruct"
-
-/* Model Code Variants */
+#include "Rte_Type.h"
 #endif                                 /* RTW_HEADER_ctrl2_1_types_h_ */
 
 /*

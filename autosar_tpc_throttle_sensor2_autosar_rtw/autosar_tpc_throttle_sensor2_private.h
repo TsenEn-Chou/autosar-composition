@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'autosar_tpc_throttle_sensor2'.
  *
- * Model version                  : 4.0
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Apr 25 13:26:19 2022
+ * Model version                  : 4.1
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 16:35:14 2022
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -20,6 +20,7 @@
 #ifndef RTW_HEADER_autosar_tpc_throttle_sensor2_private_h_
 #define RTW_HEADER_autosar_tpc_throttle_sensor2_private_h_
 #include "rtwtypes.h"
+#include "autosar_tpc_throttle_sensor2_types.h"
 #endif                  /* RTW_HEADER_autosar_tpc_throttle_sensor2_private_h_ */
 
 /*

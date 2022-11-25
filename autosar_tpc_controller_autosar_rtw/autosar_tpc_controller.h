@@ -8,8 +8,8 @@
  * Code generated for Simulink model 'autosar_tpc_controller'.
  *
  * Model version                  : 5.0
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Apr 25 13:25:18 2022
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 13:05:03 2022
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -27,14 +27,14 @@
 
 #include "autosar_tpc_controller_types.h"
 
-/* Block states (default storage) for system '<Root>' */
-typedef struct tag_DW_autosar_tpc_controller_T {
+/* PublicStructure Variables for Internal Data, for system '<Root>' */
+typedef struct {
   float32 Integrator_DSTATE;           /* '<S37>/Integrator' */
   float32 UD_DSTATE;                   /* '<S30>/UD' */
-} DW_autosar_tpc_controller_T;
+} ARID_DEF_autosar_tpc_controll_T;
 
-/* Block states (default storage) */
-extern DW_autosar_tpc_controller_T autosar_tpc_controller_DW;
+/* PublicStructure Variables for Internal Data */
+extern ARID_DEF_autosar_tpc_controll_T autosar_tpc_controller_ARID_DEF;/* '<S37>/Integrator' */
 
 /*-
  * These blocks were eliminated from the model due to optimizations:

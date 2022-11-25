@@ -2,15 +2,14 @@
 <!--
 Auto generated XML Component Description for model autosar_tpc_pedal_sensor
 Model version                : 5.2
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:12 2022
-Model Checksum               : 3244239254 3847471366 157408705 2760778989
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:34:44 2022
+Model Checksum               : 2748374964 804948446 74315419 1214094642
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>Components</SHORT-NAME>
-            <ELEMENTS/>
             <AR-PACKAGES>
                 <AR-PACKAGE>
                     <SHORT-NAME>SwcImplementations</SHORT-NAME>
@@ -49,9 +48,9 @@ Model Checksum               : 3244239254 3847471366 157408705 2760778989
                                 <SHORT-NAME>RsrcCons_autosar_tpc_pedal_sensor</SHORT-NAME>
                             </RESOURCE-CONSUMPTION>
                             <SW-VERSION>5.2.1</SW-VERSION>
-                            <USED-CODE-GENERATOR>Embedded Coder 7.8 (R2022a) 23-Nov-2021</USED-CODE-GENERATOR>
+                            <USED-CODE-GENERATOR>Embedded Coder 7.9 (R2022b) 13-May-2022</USED-CODE-GENERATOR>
                             <VENDOR-ID>0</VENDOR-ID>
-                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/PedalSensor/PedalSensor_IB</BEHAVIOR-REF>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/TPC_Composition/Components/PedalSensor/PedalSensor_IB</BEHAVIOR-REF>
                         </SWC-IMPLEMENTATION>
                     </ELEMENTS>
                 </AR-PACKAGE>

@@ -8,8 +8,8 @@
  * Code generated for Simulink model 'autosar_tpc_controller'.
  *
  * Model version                  : 5.0
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Apr 25 13:25:18 2022
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 13:05:03 2022
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -19,8 +19,6 @@
 
 #ifndef RTW_HEADER_autosar_tpc_controller_types_h_
 #define RTW_HEADER_autosar_tpc_controller_types_h_
-
-/* Model Code Variants */
 #endif                          /* RTW_HEADER_autosar_tpc_controller_types_h_ */
 
 /*

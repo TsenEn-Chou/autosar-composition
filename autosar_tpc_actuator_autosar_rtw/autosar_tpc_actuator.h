@@ -8,8 +8,8 @@
  * Code generated for Simulink model 'autosar_tpc_actuator'.
  *
  * Model version                  : 5.0
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Apr 25 13:24:54 2022
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 13:04:34 2022
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'ctrl2_1'.
  *
- * Model version                  : 1.44
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Jul 18 15:49:06 2022
+ * Model version                  : 2.18
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 16:34:03 2022
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -26,6 +26,7 @@
 #endif                                 /* ctrl2_1_COMMON_INCLUDES_ */
 
 #include "ctrl2_1_types.h"
+#include "Rte_Type.h"
 #include <math.h>
 
 /* Constant parameters (default storage) */
@@ -34,21 +35,6 @@ typedef struct {
    * Referenced by: '<Root>/2-D Lookup Table'
    */
   uint32 uDLookupTable_maxIndex[2];
-
-  /* Expression: my2d_LkupTbl.Table
-   * Referenced by: '<Root>/2-D Lookup Table'
-   */
-  uint8 uDLookupTable_tableData[12];
-
-  /* Expression: my2d_LkupTbl.Breakpoints(0)
-   * Referenced by: '<Root>/2-D Lookup Table'
-   */
-  uint8 uDLookupTable_bp01Data[3];
-
-  /* Expression: my2d_LkupTbl.Breakpoints(1)
-   * Referenced by: '<Root>/2-D Lookup Table'
-   */
-  uint8 uDLookupTable_bp02Data[4];
 } ConstP_ctrl2_1_T;
 
 /* Constant parameters (default storage) */

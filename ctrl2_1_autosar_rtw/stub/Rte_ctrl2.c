@@ -7,13 +7,13 @@
    This file is generated for:
    Atomic software component:  "ctrl2"
    ARXML schema: "4.3"
-   File generated on: "18-Jul-2022 15:49:10"  */
+   File generated on: "25-Nov-2022 16:34:07"  */
 
 #include "Rte_ctrl2.h"
 
 /* Parameters */
-MyStruct Rte_CData_my2d_LkupTbl_data;
-MyStruct* Rte_CData_my2d_LkupTbl(void)
+m_LkupTbl Rte_CData_L_4x6_single_ar_data;
+m_LkupTbl* Rte_CData_L_4x6_single_ar(void)
 {
-  return &Rte_CData_my2d_LkupTbl_data;
+  return &Rte_CData_L_4x6_single_ar_data;
 }

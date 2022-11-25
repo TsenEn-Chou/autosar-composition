@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'autosar_tpc_throttle_sensor_monitor'.
  *
- * Model version                  : 5.0
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Apr 25 13:25:33 2022
+ * Model version                  : 5.1
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 16:34:18 2022
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -25,7 +25,7 @@
 void ThrottleSensorMonitor_Step(void)
 {
   float32 rtb_Switch1;
-  Dem_EventStatusType rtb_LogicalOperator1_0;
+  Dem_EventStatusType tmp;
   boolean rtb_LogicalOperator;
   boolean rtb_LogicalOperator1;
   boolean rtb_TPS2StuckHigh_o1;
@@ -62,7 +62,7 @@ void ThrottleSensorMonitor_Step(void)
      *  Constant: '<Root>/Constant'
      */
     rtb_Switch1 = 0.0F;
-    rtb_LogicalOperator1_0 = DEM_EVENT_STATUS_FAILED;
+    tmp = DEM_EVENT_STATUS_FAILED;
   } else {
     if (rtb_LogicalOperator) {
       /* Switch: '<Root>/Switch' incorporates:
@@ -78,13 +78,13 @@ void ThrottleSensorMonitor_Step(void)
       rtb_Switch1 = Rte_IRead_ThrottleSensorMonitor_Step_TPS_Primary_Value();
     }
 
-    rtb_LogicalOperator1_0 = DEM_EVENT_STATUS_PASSED;
+    tmp = DEM_EVENT_STATUS_PASSED;
   }
 
   /* End of Switch: '<Root>/Switch1' */
 
   /* FunctionCaller: '<Root>/TPS' */
-  Rte_Call_TPS_SetEventStatus(rtb_LogicalOperator1_0);
+  Rte_Call_TPS_SetEventStatus(tmp);
 
   /* Outport generated from: '<Root>/Out Bus Element' */
   Rte_IWrite_ThrottleSensorMonitor_Step_TPS_Percent_Value(rtb_Switch1);

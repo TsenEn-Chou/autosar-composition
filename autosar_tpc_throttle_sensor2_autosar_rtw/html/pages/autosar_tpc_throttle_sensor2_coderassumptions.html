@@ -120,7 +120,7 @@ LittleEndian
 </tr>
 <tr class="odd">
 <td align="left" valign="top">
-Shift right for signed integer is arithmetic shift
+Shift right for signed integer is arithmetic shift.
 </td>
 <td align="left" valign="top">
 True
@@ -159,7 +159,7 @@ Zero initialization code has been optimized for model 'autosar_tpc_throttle_sens
 <table class="AltRow" cellspacing="0">
 <tr class="even">
 <td align="left" valign="top">
-Initial value of a global integer variable is zero
+Initial value of a global integer variable is zero.
 </td>
 <td align="left" valign="top">
 True
@@ -168,7 +168,7 @@ True
 </tr>
 <tr class="odd">
 <td align="left" valign="top">
-Initial value of each element of dynamically allocated int array is zero
+Initial value of each element of dynamically allocated int array is zero.
 </td>
 <td align="left" valign="top">
 True
@@ -180,7 +180,7 @@ True
 
 </p>
 <p>
-If the assumption is not correct, remove the optimization through the <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'rtw.report.CoderAssumptions.showMemZeroInitParams(\'autosar_tpc_throttle_sensor2\')'})" >Configuration Parameters > Code Generation > Optimization</a> settings. Alternatively, configure your target environment to make the assumption hold.
+If assumption is not correct, remove optimization by using <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'rtw.report.CoderAssumptions.showMemZeroInitParams(\'autosar_tpc_throttle_sensor2\')'})" >Configuration Parameters > Code Generation > Optimization</a> settings. Alternatively, configure target environment to make assumption hold.
 </p>
 
 </td>
@@ -195,13 +195,13 @@ Floating-Point Numbers
 <tr>
 <td align="left" valign="top">
 <p>
-Code generation is configured to support floating-point numbers, therefore your target environment might perform subnormal number calculations.
+Code generation is configured to support floating-point numbers. Target environment might perform subnormal number calculations.
 </p>
 <p>
 <table class="AltRow" cellspacing="0">
 <tr class="even">
 <td align="left" valign="top">
-Flush-to-zero computed subnormal values (FTZ)
+Flush-to-zero computed subnormal values (FTZ).
 </td>
 <td align="left" valign="top">
 False
@@ -210,7 +210,7 @@ False
 </tr>
 <tr class="odd">
 <td align="left" valign="top">
-Flush-to-zero incoming subnormal values (DAZ)
+Flush-to-zero incoming subnormal values (DAZ).
 </td>
 <td align="left" valign="top">
 False
@@ -222,7 +222,7 @@ False
 
 </p>
 <p>
-If the assumptions are not correct, subnormal numbers might cause mismatches between model and generated code simulation results.  For more information see, <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'helpview(fullfile(docroot,\'toolbox\',\'ecoder\',\'helptargets.map\'),\'subnormal_numbers_performance\')'})" >Subnormal Number Performance</a>.
+If assumptions are not correct, subnormal numbers might cause mismatches between model and generated code simulation results.  For more information see, <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'helpview(fullfile(docroot,\'toolbox\',\'ecoder\',\'helptargets.map\'),\'subnormal_numbers_performance\')'})" >Subnormal Number Performance</a>.
 </p>
 
 </td>

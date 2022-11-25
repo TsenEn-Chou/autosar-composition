@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "ctrl2"
    ARXML schema: "4.3"
-   File generated on: "18-Jul-2022 15:49:10"  */
+   File generated on: "25-Nov-2022 16:34:07"  */
 
 #ifndef Rte_Type_h
 #define Rte_Type_h
@@ -40,29 +40,26 @@
 #endif
 
 /* AUTOSAR Implementation data types, specific to software component */
-typedef uint32 UInt32;
-typedef float32 Float;
 typedef float64 Double;
+typedef float32 Float;
 typedef uint8 UInt8;
 
 /* AUTOSAR Structure Types */
-#ifndef DEFINED_TYPEDEF_FOR_MyStruct_
-#define DEFINED_TYPEDEF_FOR_MyStruct_
+#ifndef DEFINED_TYPEDEF_FOR_m_LkupTbl_
+#define DEFINED_TYPEDEF_FOR_m_LkupTbl_
 
 typedef struct {
-  UInt32 N2;
-  UInt32 N1;
-  Float BP2[4];
-  Float BP1[3];
+  Double BP2[4];
+  Double BP1[3];
   Double Table[12];
-} MyStruct;
+} m_LkupTbl;
 
 #endif
 
 /* AUTOSAR Array Types */
 typedef Double rt_Array_Double_12[12];
-typedef Float rt_Array_Float_3[3];
-typedef Float rt_Array_Float_4[4];
+typedef Double rt_Array_Double_3[3];
+typedef Double rt_Array_Double_4[4];
 typedef void* Rte_Instance;
 
 #endif

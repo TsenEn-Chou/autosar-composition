@@ -537,6 +537,8 @@ function RTW_rtwnameSIDMap() {
 	this.sidHashMap["autosar_tpc_controller:29:3866"] = {rtwname: "<S26>/Lower Limit"};
 	this.rtwnameHashMap["<S26>/AND3"] = {sid: "autosar_tpc_controller:29:653"};
 	this.sidHashMap["autosar_tpc_controller:29:653"] = {rtwname: "<S26>/AND3"};
+	this.rtwnameHashMap["<S26>/Clamping_zero"] = {sid: "autosar_tpc_controller:29:4030"};
+	this.sidHashMap["autosar_tpc_controller:29:4030"] = {rtwname: "<S26>/Clamping_zero"};
 	this.rtwnameHashMap["<S26>/Constant"] = {sid: "autosar_tpc_controller:29:3944"};
 	this.sidHashMap["autosar_tpc_controller:29:3944"] = {rtwname: "<S26>/Constant"};
 	this.rtwnameHashMap["<S26>/Constant1"] = {sid: "autosar_tpc_controller:29:655"};
@@ -547,8 +549,6 @@ function RTW_rtwnameSIDMap() {
 	this.sidHashMap["autosar_tpc_controller:29:3947"] = {rtwname: "<S26>/Constant3"};
 	this.rtwnameHashMap["<S26>/Constant4"] = {sid: "autosar_tpc_controller:29:3948"};
 	this.sidHashMap["autosar_tpc_controller:29:3948"] = {rtwname: "<S26>/Constant4"};
-	this.rtwnameHashMap["<S26>/Constant5"] = {sid: "autosar_tpc_controller:29:4030"};
-	this.sidHashMap["autosar_tpc_controller:29:4030"] = {rtwname: "<S26>/Constant5"};
 	this.rtwnameHashMap["<S26>/Dead Zone"] = {sid: "autosar_tpc_controller:29:3850"};
 	this.sidHashMap["autosar_tpc_controller:29:3850"] = {rtwname: "<S26>/Dead Zone"};
 	this.rtwnameHashMap["<S26>/Equal1"] = {sid: "autosar_tpc_controller:29:661"};

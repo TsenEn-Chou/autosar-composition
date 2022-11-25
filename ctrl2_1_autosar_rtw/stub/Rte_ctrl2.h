@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "ctrl2"
    ARXML schema: "4.3"
-   File generated on: "18-Jul-2022 15:49:10"  */
+   File generated on: "25-Nov-2022 16:34:07"  */
 
 #ifndef Rte_ctrl2_h
 #define Rte_ctrl2_h
@@ -36,10 +36,10 @@ extern FUNC(void, ctrl2_CODE) ctrl2_1_Init(void);
 extern FUNC(void, ctrl2_CODE) ctrl2_1_Step(void);
 
 /* Parameters */
-extern MyStruct Rte_CData_my2d_LkupTbl_data;
+extern m_LkupTbl Rte_CData_L_4x6_single_ar_data;
 
-#define Rte_CData_my2d_LkupTbl         Rte_CData_ctrl2_my2d_LkupTbl
+#define Rte_CData_L_4x6_single_ar      Rte_CData_ctrl2_L_4x6_single_ar
 
-MyStruct* Rte_CData_my2d_LkupTbl(void);
+m_LkupTbl* Rte_CData_L_4x6_single_ar(void);
 
 #endif

@@ -1,201 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_tpc_composition
-Model version                : 5.9
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:41 2022
-Model Checksum               : 2079139332 1027854283 3509626394 176740179
+Model version                : 6.1
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:35:45 2022
+Model Checksum               : 203012271 3076287763 3152726382 1956806920
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
-            <SHORT-NAME>Components</SHORT-NAME>
-            <ELEMENTS>
-                <COMPOSITION-SW-COMPONENT-TYPE UUID="9e695d6a-ef0c-5bb8-6ad8-e7f752dd66e5">
-                    <SHORT-NAME>TPC_Composition</SHORT-NAME>
-                    <PORTS>
-                        <R-PORT-PROTOTYPE UUID="b4862c63-76b6-5664-353c-ff405f7b48fa">
-                            <SHORT-NAME>APP_HwIO</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/APP_HwIO</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="2ab200a7-f7e0-518a-c7c7-8f85c6249f20">
-                            <SHORT-NAME>TPS1_HwIO</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_HwIO</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="ebd2f1f8-9827-5649-9eb8-275c4ad023a7">
-                            <SHORT-NAME>TPS2_HwIO</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_HwIO</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <P-PORT-PROTOTYPE UUID="ea609f9f-7b13-5460-f43d-60485fcfa59b">
-                            <SHORT-NAME>ThrCmd_HwIO</SHORT-NAME>
-                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/ThrCmd_HwIO</PROVIDED-INTERFACE-TREF>
-                        </P-PORT-PROTOTYPE>
-                        <P-PORT-PROTOTYPE UUID="327fd7c0-896f-51e6-4f9b-1210c8e572b4">
-                            <SHORT-NAME>OutBus</SHORT-NAME>
-                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/OutBus</PROVIDED-INTERFACE-TREF>
-                        </P-PORT-PROTOTYPE>
-                    </PORTS>
-                    <COMPONENTS>
-                        <SW-COMPONENT-PROTOTYPE UUID="0d94d9eb-421f-5fc6-7119-8b9ae99255cf">
-                            <SHORT-NAME>Ctrl</SHORT-NAME>
-                            <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Components/Controller</TYPE-TREF>
-                        </SW-COMPONENT-PROTOTYPE>
-                        <SW-COMPONENT-PROTOTYPE UUID="ad0bbf88-e3c7-503d-e367-e69279a96a5f">
-                            <SHORT-NAME>Actuator</SHORT-NAME>
-                            <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Components/Actuator</TYPE-TREF>
-                        </SW-COMPONENT-PROTOTYPE>
-                        <SW-COMPONENT-PROTOTYPE UUID="4a96c6e8-cbed-50a1-5fb1-f09a241d981e">
-                            <SHORT-NAME>Ctrl2</SHORT-NAME>
-                            <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Components/ctrl2</TYPE-TREF>
-                        </SW-COMPONENT-PROTOTYPE>
-                        <SW-COMPONENT-PROTOTYPE UUID="b640a63c-2c18-5bc7-3479-65ece66528af">
-                            <SHORT-NAME>TPS_Primary</SHORT-NAME>
-                            <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Components/ThrottleSensor1</TYPE-TREF>
-                        </SW-COMPONENT-PROTOTYPE>
-                        <SW-COMPONENT-PROTOTYPE UUID="dc7db515-3c5d-58d7-7b89-486bd67401f8">
-                            <SHORT-NAME>TPS_Secondary</SHORT-NAME>
-                            <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Components/ThrottleSensor2</TYPE-TREF>
-                        </SW-COMPONENT-PROTOTYPE>
-                        <SW-COMPONENT-PROTOTYPE UUID="985296aa-8f98-5f42-3125-c2cf54fb712b">
-                            <SHORT-NAME>Monitor</SHORT-NAME>
-                            <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Components/ThrottleSensorMonitor</TYPE-TREF>
-                        </SW-COMPONENT-PROTOTYPE>
-                        <SW-COMPONENT-PROTOTYPE UUID="2903068c-8759-5c31-d354-edacc8e209b1">
-                            <SHORT-NAME>PedalSensor</SHORT-NAME>
-                            <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Components/PedalSensor</TYPE-TREF>
-                        </SW-COMPONENT-PROTOTYPE>
-                    </COMPONENTS>
-                    <CONNECTORS>
-                        <ASSEMBLY-SW-CONNECTOR UUID="f22c3505-0217-576b-6264-242efd6e6a38">
-                            <SHORT-NAME>Ctrl_ThrCmd_Percent_Actuator_ThrCmd_Percent</SHORT-NAME>
-                            <PROVIDER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl</CONTEXT-COMPONENT-REF>
-                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/Controller/ThrCmd_Percent</TARGET-P-PORT-REF>
-                            </PROVIDER-IREF>
-                            <REQUESTER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Actuator</CONTEXT-COMPONENT-REF>
-                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/Actuator/ThrCmd_Percent</TARGET-R-PORT-REF>
-                            </REQUESTER-IREF>
-                        </ASSEMBLY-SW-CONNECTOR>
-                        <DELEGATION-SW-CONNECTOR UUID="81807138-7081-51f6-058b-0e5417e8fa20">
-                            <SHORT-NAME>Actuator_ThrCmd_HwIO_ThrCmd_HwIO</SHORT-NAME>
-                            <INNER-PORT-IREF>
-                                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Actuator</CONTEXT-COMPONENT-REF>
-                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/Actuator/ThrCmd_HwIO</TARGET-P-PORT-REF>
-                                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
-                            </INNER-PORT-IREF>
-                            <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/TPC_Composition/ThrCmd_HwIO</OUTER-PORT-REF>
-                        </DELEGATION-SW-CONNECTOR>
-                        <DELEGATION-SW-CONNECTOR UUID="4dbe84ab-4241-57fb-d248-9e7f77652ed3">
-                            <SHORT-NAME>Ctrl2_OutBus_OutBus</SHORT-NAME>
-                            <INNER-PORT-IREF>
-                                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl2</CONTEXT-COMPONENT-REF>
-                                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/ctrl2/OutBus</TARGET-P-PORT-REF>
-                                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
-                            </INNER-PORT-IREF>
-                            <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/TPC_Composition/OutBus</OUTER-PORT-REF>
-                        </DELEGATION-SW-CONNECTOR>
-                        <ASSEMBLY-SW-CONNECTOR UUID="9ea2ed60-53fa-5baf-5a6b-15277b7cfd55">
-                            <SHORT-NAME>TPS_Primary_TPS_Primary_Monitor_TPS_Primary</SHORT-NAME>
-                            <PROVIDER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Primary</CONTEXT-COMPONENT-REF>
-                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottleSensor1/TPS_Primary</TARGET-P-PORT-REF>
-                            </PROVIDER-IREF>
-                            <REQUESTER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
-                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS_Primary</TARGET-R-PORT-REF>
-                            </REQUESTER-IREF>
-                        </ASSEMBLY-SW-CONNECTOR>
-                        <ASSEMBLY-SW-CONNECTOR UUID="75c06567-cdaf-59ac-550c-1657d65d8d27">
-                            <SHORT-NAME>TPS_Secondary_TPS_Secondary_Monitor_TPS_Secondary</SHORT-NAME>
-                            <PROVIDER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Secondary</CONTEXT-COMPONENT-REF>
-                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottleSensor2/TPS_Secondary</TARGET-P-PORT-REF>
-                            </PROVIDER-IREF>
-                            <REQUESTER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
-                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS_Secondary</TARGET-R-PORT-REF>
-                            </REQUESTER-IREF>
-                        </ASSEMBLY-SW-CONNECTOR>
-                        <ASSEMBLY-SW-CONNECTOR UUID="054d6373-a7c8-5c9e-7b67-0fbe0f66674a">
-                            <SHORT-NAME>Monitor_TPS_Percent_Ctrl_TPS_Percent</SHORT-NAME>
-                            <PROVIDER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
-                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS_Percent</TARGET-P-PORT-REF>
-                            </PROVIDER-IREF>
-                            <REQUESTER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl</CONTEXT-COMPONENT-REF>
-                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/Controller/TPS_Percent</TARGET-R-PORT-REF>
-                            </REQUESTER-IREF>
-                        </ASSEMBLY-SW-CONNECTOR>
-                        <ASSEMBLY-SW-CONNECTOR UUID="86888349-0e29-506f-6ce8-47ee5c47563f">
-                            <SHORT-NAME>Monitor_TPS_Percent_Ctrl2_InBus2</SHORT-NAME>
-                            <PROVIDER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
-                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS_Percent</TARGET-P-PORT-REF>
-                            </PROVIDER-IREF>
-                            <REQUESTER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl2</CONTEXT-COMPONENT-REF>
-                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ctrl2/InBus2</TARGET-R-PORT-REF>
-                            </REQUESTER-IREF>
-                        </ASSEMBLY-SW-CONNECTOR>
-                        <ASSEMBLY-SW-CONNECTOR UUID="ee39fa88-42c2-59a2-92b8-de4d0a3533c0">
-                            <SHORT-NAME>PedalSensor_APP_Percent_Ctrl_APP_Percent</SHORT-NAME>
-                            <PROVIDER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/PedalSensor</CONTEXT-COMPONENT-REF>
-                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/PedalSensor/APP_Percent</TARGET-P-PORT-REF>
-                            </PROVIDER-IREF>
-                            <REQUESTER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl</CONTEXT-COMPONENT-REF>
-                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/Controller/APP_Percent</TARGET-R-PORT-REF>
-                            </REQUESTER-IREF>
-                        </ASSEMBLY-SW-CONNECTOR>
-                        <ASSEMBLY-SW-CONNECTOR UUID="7d6cbd79-8c66-5c2e-aed5-18dc6f053ec9">
-                            <SHORT-NAME>PedalSensor_APP_Percent_Ctrl2_InBus1</SHORT-NAME>
-                            <PROVIDER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/PedalSensor</CONTEXT-COMPONENT-REF>
-                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/PedalSensor/APP_Percent</TARGET-P-PORT-REF>
-                            </PROVIDER-IREF>
-                            <REQUESTER-IREF>
-                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl2</CONTEXT-COMPONENT-REF>
-                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ctrl2/InBus1</TARGET-R-PORT-REF>
-                            </REQUESTER-IREF>
-                        </ASSEMBLY-SW-CONNECTOR>
-                        <DELEGATION-SW-CONNECTOR UUID="c94a34d7-468e-5cb5-ee7b-84d60b28c5db">
-                            <SHORT-NAME>TPS1_HwIO_TPS_Primary_TPS_HwIO</SHORT-NAME>
-                            <INNER-PORT-IREF>
-                                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Primary</CONTEXT-COMPONENT-REF>
-                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensor1/TPS_HwIO</TARGET-R-PORT-REF>
-                                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                            </INNER-PORT-IREF>
-                            <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/TPC_Composition/TPS1_HwIO</OUTER-PORT-REF>
-                        </DELEGATION-SW-CONNECTOR>
-                        <DELEGATION-SW-CONNECTOR UUID="d4e33245-ed2f-5493-94f0-bb640878bd46">
-                            <SHORT-NAME>TPS2_HwIO_TPS_Secondary_TPS_HwIO</SHORT-NAME>
-                            <INNER-PORT-IREF>
-                                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Secondary</CONTEXT-COMPONENT-REF>
-                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensor2/TPS_HwIO</TARGET-R-PORT-REF>
-                                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                            </INNER-PORT-IREF>
-                            <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/TPC_Composition/TPS2_HwIO</OUTER-PORT-REF>
-                        </DELEGATION-SW-CONNECTOR>
-                        <DELEGATION-SW-CONNECTOR UUID="5aa3d7e7-1a1b-5251-d0c1-cd97d3034384">
-                            <SHORT-NAME>APP_HwIO_PedalSensor_APP_HwIO</SHORT-NAME>
-                            <INNER-PORT-IREF>
-                                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/PedalSensor</CONTEXT-COMPONENT-REF>
-                                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/PedalSensor/APP_HwIO</TARGET-R-PORT-REF>
-                                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                            </INNER-PORT-IREF>
-                            <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/TPC_Composition/APP_HwIO</OUTER-PORT-REF>
-                        </DELEGATION-SW-CONNECTOR>
-                    </CONNECTORS>
-                </COMPOSITION-SW-COMPONENT-TYPE>
-            </ELEMENTS>
+            <SHORT-NAME>TPC_Composition</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <COMPOSITION-SW-COMPONENT-TYPE UUID="a1a51301-9b75-5b39-125a-feb15ae2f55e">
+                            <SHORT-NAME>TPC_Composition</SHORT-NAME>
+                            <PORTS>
+                                <R-PORT-PROTOTYPE UUID="b1e331c4-cb7c-540f-1641-e381359647c3">
+                                    <SHORT-NAME>APP_HwIO</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/APP_HwIO</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="77b7bd11-6a4a-53b8-dd54-492f90da1f68">
+                                    <SHORT-NAME>TPS1_HwIO</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/TPS_HwIO</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="2b5f2538-92ff-571d-8197-f8743413a907">
+                                    <SHORT-NAME>TPS2_HwIO</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/TPS_HwIO</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="1ac2a882-62ec-5e37-69fd-80792c73cd83">
+                                    <SHORT-NAME>ThrCmd_HwIO</SHORT-NAME>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/ThrCmd_HwIO</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="e0c402c5-16ae-5557-6af3-733efe08e72a">
+                                    <SHORT-NAME>OutBus</SHORT-NAME>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/OutBus</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                            </PORTS>
+                            <COMPONENTS>
+                                <SW-COMPONENT-PROTOTYPE UUID="a62b4019-d55c-5b2d-4cf5-3bb67f1807ff">
+                                    <SHORT-NAME>Ctrl</SHORT-NAME>
+                                    <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/TPC_Composition/Components/Controller</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="b55ba67f-a265-53d4-72f9-154f533ef74f">
+                                    <SHORT-NAME>Actuator</SHORT-NAME>
+                                    <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/TPC_Composition/Components/Actuator</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="1a02abde-c86b-5944-ff9a-b45ebe8697f8">
+                                    <SHORT-NAME>Ctrl2</SHORT-NAME>
+                                    <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/TPC_Composition/Components/ctrl2</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="202d76df-d88f-51fe-d955-4e58572c1ed0">
+                                    <SHORT-NAME>TPS_Primary</SHORT-NAME>
+                                    <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/TPC_Composition/Components/ThrottleSensor1</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="c7f22e2d-004c-583d-c1d7-0be0b1694a89">
+                                    <SHORT-NAME>TPS_Secondary</SHORT-NAME>
+                                    <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/TPC_Composition/Components/ThrottleSensor2</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="ce2afca4-7dbb-54b6-f95d-2f34a54a2d85">
+                                    <SHORT-NAME>Monitor</SHORT-NAME>
+                                    <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/TPC_Composition/Components/ThrottleSensorMonitor</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="659e0f8b-8d03-561a-962b-433ec6a07235">
+                                    <SHORT-NAME>PedalSensor</SHORT-NAME>
+                                    <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/TPC_Composition/Components/PedalSensor</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
+                            </COMPONENTS>
+                            <CONNECTORS>
+                                <ASSEMBLY-SW-CONNECTOR UUID="ef8af0b7-2006-5bdf-e498-5209c76188de">
+                                    <SHORT-NAME>Ctrl_ThrCmd_Percent_Actuator_ThrCmd_Percent</SHORT-NAME>
+                                    <PROVIDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl</CONTEXT-COMPONENT-REF>
+                                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/Controller/ThrCmd_Percent</TARGET-P-PORT-REF>
+                                    </PROVIDER-IREF>
+                                    <REQUESTER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Actuator</CONTEXT-COMPONENT-REF>
+                                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/Actuator/ThrCmd_Percent</TARGET-R-PORT-REF>
+                                    </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="b168e431-725c-5484-bdd4-a4c1b6ab3d1f">
+                                    <SHORT-NAME>Actuator_ThrCmd_HwIO_ThrCmd_HwIO</SHORT-NAME>
+                                    <INNER-PORT-IREF>
+                                        <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Actuator</CONTEXT-COMPONENT-REF>
+                                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/Actuator/ThrCmd_HwIO</TARGET-P-PORT-REF>
+                                        </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    </INNER-PORT-IREF>
+                                    <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/ThrCmd_HwIO</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="d93e5098-6525-5cd0-bc93-b0d2a6bbddeb">
+                                    <SHORT-NAME>Ctrl2_OutBus_OutBus</SHORT-NAME>
+                                    <INNER-PORT-IREF>
+                                        <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl2</CONTEXT-COMPONENT-REF>
+                                            <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/OutBus</TARGET-P-PORT-REF>
+                                        </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    </INNER-PORT-IREF>
+                                    <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/OutBus</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="fccd1a6b-5f7e-5700-eb2a-4a0c5366d9cd">
+                                    <SHORT-NAME>TPS_Primary_TPS_Primary_Monitor_TPS_Primary</SHORT-NAME>
+                                    <PROVIDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Primary</CONTEXT-COMPONENT-REF>
+                                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensor1/TPS_Primary</TARGET-P-PORT-REF>
+                                    </PROVIDER-IREF>
+                                    <REQUESTER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
+                                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS_Primary</TARGET-R-PORT-REF>
+                                    </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="7558d2f6-46f2-547d-7c6a-5e0aebb9d49c">
+                                    <SHORT-NAME>TPS_Secondary_TPS_Secondary_Monitor_TPS_Secondary</SHORT-NAME>
+                                    <PROVIDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Secondary</CONTEXT-COMPONENT-REF>
+                                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensor2/TPS_Secondary</TARGET-P-PORT-REF>
+                                    </PROVIDER-IREF>
+                                    <REQUESTER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
+                                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS_Secondary</TARGET-R-PORT-REF>
+                                    </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="300899c1-d99c-5b3a-601e-276461bf24a7">
+                                    <SHORT-NAME>Monitor_TPS_Percent_Ctrl_TPS_Percent</SHORT-NAME>
+                                    <PROVIDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
+                                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS_Percent</TARGET-P-PORT-REF>
+                                    </PROVIDER-IREF>
+                                    <REQUESTER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl</CONTEXT-COMPONENT-REF>
+                                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/Controller/TPS_Percent</TARGET-R-PORT-REF>
+                                    </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="9cf4a479-71f9-54fe-95fa-85da4459d236">
+                                    <SHORT-NAME>Monitor_TPS_Percent_Ctrl2_InBus2</SHORT-NAME>
+                                    <PROVIDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Monitor</CONTEXT-COMPONENT-REF>
+                                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS_Percent</TARGET-P-PORT-REF>
+                                    </PROVIDER-IREF>
+                                    <REQUESTER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl2</CONTEXT-COMPONENT-REF>
+                                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/InBus2</TARGET-R-PORT-REF>
+                                    </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="6702f8a8-9368-5882-edaf-3bb4dc1c9c02">
+                                    <SHORT-NAME>PedalSensor_APP_Percent_Ctrl_APP_Percent</SHORT-NAME>
+                                    <PROVIDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/PedalSensor</CONTEXT-COMPONENT-REF>
+                                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/PedalSensor/APP_Percent</TARGET-P-PORT-REF>
+                                    </PROVIDER-IREF>
+                                    <REQUESTER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl</CONTEXT-COMPONENT-REF>
+                                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/Controller/APP_Percent</TARGET-R-PORT-REF>
+                                    </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <ASSEMBLY-SW-CONNECTOR UUID="8d586695-c0e8-5cab-0c4c-0b830457e427">
+                                    <SHORT-NAME>PedalSensor_APP_Percent_Ctrl2_InBus1</SHORT-NAME>
+                                    <PROVIDER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/PedalSensor</CONTEXT-COMPONENT-REF>
+                                        <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/PedalSensor/APP_Percent</TARGET-P-PORT-REF>
+                                    </PROVIDER-IREF>
+                                    <REQUESTER-IREF>
+                                        <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl2</CONTEXT-COMPONENT-REF>
+                                        <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/InBus1</TARGET-R-PORT-REF>
+                                    </REQUESTER-IREF>
+                                </ASSEMBLY-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="f9b39383-5022-5504-510b-a55b1ba9298c">
+                                    <SHORT-NAME>TPS1_HwIO_TPS_Primary_TPS_HwIO</SHORT-NAME>
+                                    <INNER-PORT-IREF>
+                                        <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Primary</CONTEXT-COMPONENT-REF>
+                                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensor1/TPS_HwIO</TARGET-R-PORT-REF>
+                                        </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    </INNER-PORT-IREF>
+                                    <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS1_HwIO</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="7fa68eac-1e3b-59f7-5fec-71c0f8a4b021">
+                                    <SHORT-NAME>TPS2_HwIO_TPS_Secondary_TPS_HwIO</SHORT-NAME>
+                                    <INNER-PORT-IREF>
+                                        <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Secondary</CONTEXT-COMPONENT-REF>
+                                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensor2/TPS_HwIO</TARGET-R-PORT-REF>
+                                        </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    </INNER-PORT-IREF>
+                                    <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS2_HwIO</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                                <DELEGATION-SW-CONNECTOR UUID="bdf008d3-5e49-5c41-cd79-bb26117eb401">
+                                    <SHORT-NAME>APP_HwIO_PedalSensor_APP_HwIO</SHORT-NAME>
+                                    <INNER-PORT-IREF>
+                                        <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                            <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/PedalSensor</CONTEXT-COMPONENT-REF>
+                                            <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/PedalSensor/APP_HwIO</TARGET-R-PORT-REF>
+                                        </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                    </INNER-PORT-IREF>
+                                    <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/APP_HwIO</OUTER-PORT-REF>
+                                </DELEGATION-SW-CONNECTOR>
+                            </CONNECTORS>
+                        </COMPOSITION-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
         </AR-PACKAGE>
     </AR-PACKAGES>
 </AUTOSAR>

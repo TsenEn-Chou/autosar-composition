@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'autosar_tpc_throttle_sensor1'.
  *
- * Model version                  : 4.0
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Mon Apr 25 13:26:02 2022
+ * Model version                  : 4.1
+ * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
+ * C/C++ source code generated on : Fri Nov 25 16:34:52 2022
  */
 
 #ifndef RTW_HEADER_look1_iflf_linlcpw_h_

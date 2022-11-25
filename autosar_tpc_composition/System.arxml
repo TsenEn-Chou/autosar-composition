@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_tpc_composition
-Model version                : 5.9
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:41 2022
-Model Checksum               : 2079139332 1027854283 3509626394 176740179
+Model version                : 6.1
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:35:44 2022
+Model Checksum               : 203012271 3076287763 3152726382 1956806920
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>System</SHORT-NAME>
             <ELEMENTS>
-                <SYSTEM UUID="c3896e5a-fd4e-5e9a-a469-ca44ad3b6cc6">
+                <SYSTEM UUID="5ad5e430-ca0e-51f0-dab3-ac314bb827c8">
                     <SHORT-NAME>EcuExtract</SHORT-NAME>
                     <CATEGORY>ECU_EXTRACT</CATEGORY>
                     <MAPPINGS>
-                        <SYSTEM-MAPPING UUID="0382c526-339c-567f-5fe5-9d7ef6067453">
+                        <SYSTEM-MAPPING UUID="218180b6-1ef5-5365-57c4-1f9fc9d2494c">
                             <SHORT-NAME>SystemMapping</SHORT-NAME>
                             <SW-MAPPINGS>
-                                <SWC-TO-ECU-MAPPING UUID="6d6bba7a-9780-5392-85cd-808757b05a66">
+                                <SWC-TO-ECU-MAPPING UUID="29ba752d-4944-5e10-63e2-971c947db56a">
                                     <SHORT-NAME>SwcToEcuMapping</SHORT-NAME>
                                     <COMPONENT-IREFS>
                                         <COMPONENT-IREF>
-                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl</TARGET-COMPONENT-REF>
+                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl</TARGET-COMPONENT-REF>
                                         </COMPONENT-IREF>
                                         <COMPONENT-IREF>
-                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Actuator</TARGET-COMPONENT-REF>
+                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Actuator</TARGET-COMPONENT-REF>
                                         </COMPONENT-IREF>
                                         <COMPONENT-IREF>
-                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl2</TARGET-COMPONENT-REF>
+                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl2</TARGET-COMPONENT-REF>
                                         </COMPONENT-IREF>
                                         <COMPONENT-IREF>
-                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Primary</TARGET-COMPONENT-REF>
+                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Primary</TARGET-COMPONENT-REF>
                                         </COMPONENT-IREF>
                                         <COMPONENT-IREF>
-                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Secondary</TARGET-COMPONENT-REF>
+                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Secondary</TARGET-COMPONENT-REF>
                                         </COMPONENT-IREF>
                                         <COMPONENT-IREF>
-                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Monitor</TARGET-COMPONENT-REF>
+                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Monitor</TARGET-COMPONENT-REF>
                                         </COMPONENT-IREF>
                                         <COMPONENT-IREF>
-                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/PedalSensor</TARGET-COMPONENT-REF>
+                                            <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/PedalSensor</TARGET-COMPONENT-REF>
                                         </COMPONENT-IREF>
                                     </COMPONENT-IREFS>
                                     <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/System/EcuInstance</ECU-INSTANCE-REF>
@@ -49,13 +49,13 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                         </SYSTEM-MAPPING>
                     </MAPPINGS>
                     <ROOT-SOFTWARE-COMPOSITIONS>
-                        <ROOT-SW-COMPOSITION-PROTOTYPE UUID="b28395d9-f089-54ff-1e08-9fca5e825205">
+                        <ROOT-SW-COMPOSITION-PROTOTYPE UUID="e9a2606b-07f3-575d-bad6-f50a7beda727">
                             <SHORT-NAME>RootSwCompositionPrototype</SHORT-NAME>
-                            <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/TPC_Composition</SOFTWARE-COMPOSITION-TREF>
+                            <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/TPC_Composition/Components/TPC_Composition</SOFTWARE-COMPOSITION-TREF>
                         </ROOT-SW-COMPOSITION-PROTOTYPE>
                     </ROOT-SOFTWARE-COMPOSITIONS>
                 </SYSTEM>
-                <ECU-INSTANCE UUID="d9ffecd4-2ed8-570a-7711-5d5f5422f609">
+                <ECU-INSTANCE UUID="730ec944-f461-5b69-ba32-2ce06ead7d8f">
                     <SHORT-NAME>EcuInstance</SHORT-NAME>
                 </ECU-INSTANCE>
             </ELEMENTS>

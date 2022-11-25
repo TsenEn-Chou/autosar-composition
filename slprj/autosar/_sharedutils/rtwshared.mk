@@ -2,7 +2,7 @@
 ## Makefile generated for component 'rtwshared'. 
 ## 
 ## Makefile     : rtwshared.mk
-## Generated on : Mon Jul 18 15:42:28 2022
+## Generated on : Fri Nov 25 16:35:21 2022
 ## Final product: ./rtwshared.a
 ## Product type : static library
 ## 
@@ -19,8 +19,8 @@
 
 PRODUCT_NAME              = rtwshared
 MAKEFILE                  = rtwshared.mk
-MATLAB_ROOT               = /Applications/MATLAB_R2022a.app
-MATLAB_BIN                = /Applications/MATLAB_R2022a.app/bin
+MATLAB_ROOT               = /Applications/MATLAB_R2022b.app
+MATLAB_BIN                = /Applications/MATLAB_R2022b.app/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/maci64
 START_DIR                 = /Users/tsen/Documents/MATLAB/Examples/R2022a/autosarblockset/AuthorAUTOSARCompositionsInArchitectureModelExample
 SOLVER                    = 
@@ -37,9 +37,9 @@ MODELLIB                  = rtwshared.a
 ## TOOLCHAIN SPECIFICATIONS
 ###########################################################################
 
-# Toolchain Name:          Clang v3.1 | gmake (64-bit Mac)
-# Supported Version(s):    3.1
-# ToolchainInfo Version:   2022a
+# Toolchain Name:          Xcode with Clang | gmake (64-bit Mac)
+# Supported Version(s):    
+# ToolchainInfo Version:   2022b
 # Specification Revision:  1.0
 # 
 #-------------------------------------------
@@ -127,7 +127,8 @@ CFLAGS               = -c -isysroot $(XCODE_SDK_ROOT) -arch $(ARCHS) $(C_STANDAR
 CPPFLAGS             = -c -isysroot $(XCODE_SDK_ROOT) -arch $(ARCHS) $(CPP_STANDARD_OPTS) -mmacosx-version-min=10.15 \
                        -O0
 CPP_LDFLAGS          = -arch $(ARCHS) -isysroot $(XCODE_SDK_ROOT) -Wl,-rpath,@executable_path -Wl,-rpath,@executable_path/$(RELATIVE_PATH_TO_ANCHOR)
-CPP_SHAREDLIB_LDFLAGS  = -dynamiclib -install_name @rpath/$(notdir $(PRODUCT)) -isysroot $(XCODE_SDK_ROOT) \
+CPP_SHAREDLIB_LDFLAGS  = -arch $(ARCHS)  \
+                         -dynamiclib -install_name @rpath/$(notdir $(PRODUCT)) -isysroot $(XCODE_SDK_ROOT) \
                          -Wl,$(LD_NAMESPACE) $(LD_UNDEFS)
 DOWNLOAD_FLAGS       =
 EXECUTE_FLAGS        =
@@ -137,7 +138,8 @@ MEX_CPPLDFLAGS       =
 MEX_CFLAGS           =
 MEX_LDFLAGS          =
 MAKE_FLAGS           = -f $(MAKEFILE)
-SHAREDLIB_LDFLAGS    = -dynamiclib -install_name @rpath/$(notdir $(PRODUCT)) -isysroot $(XCODE_SDK_ROOT) \
+SHAREDLIB_LDFLAGS    = -arch $(ARCHS)  \
+                       -dynamiclib -install_name @rpath/$(notdir $(PRODUCT)) -isysroot $(XCODE_SDK_ROOT) \
                        -Wl,$(LD_NAMESPACE) $(LD_UNDEFS)
 
 

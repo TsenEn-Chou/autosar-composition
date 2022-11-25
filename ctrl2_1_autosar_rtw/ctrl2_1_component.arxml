@@ -1,164 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model ctrl2_1
-Model version                : 1.44
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:52:57 2022
-Model Checksum               : 677785096 3002766651 2727922532 1970996325
+Model version                : 2.18
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:34:09 2022
+Model Checksum               : 3505936139 2510677207 123133272 2191892917
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
-            <SHORT-NAME>Components</SHORT-NAME>
-            <ELEMENTS>
-                <APPLICATION-SW-COMPONENT-TYPE UUID="d70976ab-ba39-5c7e-e024-392a6e124127">
-                    <SHORT-NAME>ctrl2</SHORT-NAME>
-                    <PORTS>
-                        <R-PORT-PROTOTYPE UUID="2ec869ef-0a1f-5525-81e7-d21bfb6c7723">
-                            <SHORT-NAME>InBus1</SHORT-NAME>
-                            <REQUIRED-COM-SPECS>
-                                <NONQUEUED-RECEIVER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/InBus1/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
-                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
-                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-RECEIVER-COM-SPEC>
-                            </REQUIRED-COM-SPECS>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/InBus1</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="b14993f8-6576-5e87-dffb-22afa55d75c6">
-                            <SHORT-NAME>InBus2</SHORT-NAME>
-                            <REQUIRED-COM-SPECS>
-                                <NONQUEUED-RECEIVER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/InBus2/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
-                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
-                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-RECEIVER-COM-SPEC>
-                            </REQUIRED-COM-SPECS>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/InBus2</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <P-PORT-PROTOTYPE UUID="90e8d300-172a-5685-89e8-54d628f650d6">
-                            <SHORT-NAME>OutBus</SHORT-NAME>
-                            <PROVIDED-COM-SPECS>
-                                <NONQUEUED-SENDER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/OutBus/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-SENDER-COM-SPEC>
-                            </PROVIDED-COM-SPECS>
-                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/OutBus</PROVIDED-INTERFACE-TREF>
-                        </P-PORT-PROTOTYPE>
-                    </PORTS>
-                    <INTERNAL-BEHAVIORS>
-                        <SWC-INTERNAL-BEHAVIOR UUID="feff0edd-ce1d-569c-a462-78c17b63241f">
-                            <SHORT-NAME>ctrl2_1_IB</SHORT-NAME>
-                            <DATA-TYPE-MAPPING-REFS>
-                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/DataTypeMappings/ctrl2DataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
-                            </DATA-TYPE-MAPPING-REFS>
-                            <EVENTS>
-                                <TIMING-EVENT UUID="f7941978-1029-5be0-5663-d5be2381559f">
-                                    <SHORT-NAME>Event_ctrl2_1_Step</SHORT-NAME>
-                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ctrl2/ctrl2_1_IB/ctrl2_1_Step</START-ON-EVENT-REF>
-                                    <PERIOD>0.2</PERIOD>
-                                </TIMING-EVENT>
-                            </EVENTS>
-                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                            <RUNNABLES>
-                                <RUNNABLE-ENTITY UUID="e6d63140-1c25-5148-a0a3-e5dc816e11f3">
-                                    <SHORT-NAME>ctrl2_1_Init</SHORT-NAME>
-                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
-                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <SYMBOL>ctrl2_1_Init</SYMBOL>
-                                </RUNNABLE-ENTITY>
-                                <RUNNABLE-ENTITY UUID="2cc6eb05-c127-5d82-ffd7-66c45ae6f11c">
-                                    <SHORT-NAME>ctrl2_1_Step</SHORT-NAME>
-                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
-                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <DATA-READ-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="3467cfe0-5d95-54a9-03a8-ee89a382a313">
-                                            <SHORT-NAME>IN_InBus1_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/ctrl2/InBus1</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/InBus1/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                        <VARIABLE-ACCESS UUID="d72f68a9-d98c-5344-554b-2d81c2117f9b">
-                                            <SHORT-NAME>IN_InBus2_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/ctrl2/InBus2</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/InBus2/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                    </DATA-READ-ACCESSS>
-                                    <DATA-WRITE-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="ec065421-d90b-5ef9-1ca2-b0f2bf683315">
-                                            <SHORT-NAME>OUT_OutBus_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/ctrl2/OutBus</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/OutBus/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                    </DATA-WRITE-ACCESSS>
-                                    <SYMBOL>ctrl2_1_Step</SYMBOL>
-                                </RUNNABLE-ENTITY>
-                            </RUNNABLES>
-                            <SHARED-PARAMETERS>
-                                <PARAMETER-DATA-PROTOTYPE UUID="9c9ab048-a0ea-540f-08d4-7cf108e2d9ff">
-                                    <SHORT-NAME>my2d_LkupTbl</SHORT-NAME>
-                                    <CATEGORY>MAP</CATEGORY>
-                                    <SW-DATA-DEF-PROPS>
-                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
-                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                    </SW-DATA-DEF-PROPS>
-                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Appl_my2d_LkupTbl</TYPE-TREF>
-                                    <INIT-VALUE>
-                                        <CONSTANT-REFERENCE>
-                                            <SHORT-LABEL>my2d_LkupTbl</SHORT-LABEL>
-                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/DataTypes/Constants/my2d_LkupTbl</CONSTANT-REF>
-                                        </CONSTANT-REFERENCE>
-                                    </INIT-VALUE>
-                                </PARAMETER-DATA-PROTOTYPE>
-                            </SHARED-PARAMETERS>
-                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                        </SWC-INTERNAL-BEHAVIOR>
-                    </INTERNAL-BEHAVIORS>
-                </APPLICATION-SW-COMPONENT-TYPE>
-            </ELEMENTS>
+            <SHORT-NAME>TPC_Composition</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <APPLICATION-SW-COMPONENT-TYPE UUID="d70976ab-ba39-5c7e-e024-392a6e124127">
+                            <SHORT-NAME>ctrl2</SHORT-NAME>
+                            <PORTS>
+                                <R-PORT-PROTOTYPE UUID="2ec869ef-0a1f-5525-81e7-d21bfb6c7723">
+                                    <SHORT-NAME>InBus1</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/InBus1/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/InBus1</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="b14993f8-6576-5e87-dffb-22afa55d75c6">
+                                    <SHORT-NAME>InBus2</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/InBus2/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/InBus2</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="90e8d300-172a-5685-89e8-54d628f650d6">
+                                    <SHORT-NAME>OutBus</SHORT-NAME>
+                                    <PROVIDED-COM-SPECS>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/OutBus/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                    </PROVIDED-COM-SPECS>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/OutBus</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                            </PORTS>
+                            <INTERNAL-BEHAVIORS>
+                                <SWC-INTERNAL-BEHAVIOR UUID="feff0edd-ce1d-569c-a462-78c17b63241f">
+                                    <SHORT-NAME>ctrl2_1_IB</SHORT-NAME>
+                                    <DATA-TYPE-MAPPING-REFS>
+                                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/TPC_Composition/DataTypes/DataTypeMappings/ctrl2DataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                                    </DATA-TYPE-MAPPING-REFS>
+                                    <EVENTS>
+                                        <TIMING-EVENT UUID="f7941978-1029-5be0-5663-d5be2381559f">
+                                            <SHORT-NAME>Event_ctrl2_1_Step</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/ctrl2/ctrl2_1_IB/ctrl2_1_Step</START-ON-EVENT-REF>
+                                            <PERIOD>0.2</PERIOD>
+                                        </TIMING-EVENT>
+                                    </EVENTS>
+                                    <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                    <RUNNABLES>
+                                        <RUNNABLE-ENTITY UUID="e6d63140-1c25-5148-a0a3-e5dc816e11f3">
+                                            <SHORT-NAME>ctrl2_1_Init</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>ctrl2_1_Init</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="2cc6eb05-c127-5d82-ffd7-66c45ae6f11c">
+                                            <SHORT-NAME>ctrl2_1_Step</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-READ-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="8256d7f2-4c13-5d79-05f1-2c48388a30d5">
+                                                    <SHORT-NAME>IN_InBus1_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/InBus1</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/InBus1/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                                <VARIABLE-ACCESS UUID="233db681-9b23-5b34-b558-371239c4c19c">
+                                                    <SHORT-NAME>IN_InBus2_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/InBus2</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/InBus2/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-READ-ACCESSS>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="9ca66d8f-b100-5a15-7cd7-e38174f57550">
+                                                    <SHORT-NAME>OUT_OutBus_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/OutBus</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/OutBus/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <PARAMETER-ACCESSS>
+                                                <PARAMETER-ACCESS UUID="a6763ce4-a974-51d9-29ca-211eb866aa34">
+                                                    <SHORT-NAME>SCALPRM_L_4x6_single_ar</SHORT-NAME>
+                                                    <ACCESSED-PARAMETER>
+                                                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/TPC_Composition/Components/ctrl2/ctrl2_1_IB/L_4x6_single_ar</LOCAL-PARAMETER-REF>
+                                                    </ACCESSED-PARAMETER>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALPRM-AXIS-SET>
+                                                                    <SW-CALPRM-AXIS>
+                                                                        <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                                        <SW-AXIS-INDIVIDUAL>
+                                                                            <SW-VARIABLE-REFS>
+                                                                                <AUTOSAR-VARIABLE>
+                                                                                    <AUTOSAR-VARIABLE-IREF>
+                                                                                        <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/InBus2</PORT-PROTOTYPE-REF>
+                                                                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/InBus2/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                                                    </AUTOSAR-VARIABLE-IREF>
+                                                                                </AUTOSAR-VARIABLE>
+                                                                            </SW-VARIABLE-REFS>
+                                                                        </SW-AXIS-INDIVIDUAL>
+                                                                    </SW-CALPRM-AXIS>
+                                                                    <SW-CALPRM-AXIS>
+                                                                        <SW-AXIS-INDEX>2</SW-AXIS-INDEX>
+                                                                        <SW-AXIS-INDIVIDUAL>
+                                                                            <SW-VARIABLE-REFS>
+                                                                                <AUTOSAR-VARIABLE>
+                                                                                    <AUTOSAR-VARIABLE-IREF>
+                                                                                        <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ctrl2/InBus1</PORT-PROTOTYPE-REF>
+                                                                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/InBus1/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                                                    </AUTOSAR-VARIABLE-IREF>
+                                                                                </AUTOSAR-VARIABLE>
+                                                                            </SW-VARIABLE-REFS>
+                                                                        </SW-AXIS-INDIVIDUAL>
+                                                                    </SW-CALPRM-AXIS>
+                                                                </SW-CALPRM-AXIS-SET>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                </PARAMETER-ACCESS>
+                                            </PARAMETER-ACCESSS>
+                                            <SYMBOL>ctrl2_1_Step</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                    </RUNNABLES>
+                                    <SHARED-PARAMETERS>
+                                        <PARAMETER-DATA-PROTOTYPE UUID="3edc13c7-5271-53fe-ef73-89c02f07db09">
+                                            <SHORT-NAME>L_4x6_single_ar</SHORT-NAME>
+                                            <CATEGORY>MAP</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/TPC_Composition/DataTypes/ApplDataTypes/Appl_my2d_LkupTbl</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>L_4x6_single_ar</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/TPC_Composition/DataTypes/Constants/L_4x6_single_ar</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </PARAMETER-DATA-PROTOTYPE>
+                                    </SHARED-PARAMETERS>
+                                    <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                </SWC-INTERNAL-BEHAVIOR>
+                            </INTERNAL-BEHAVIORS>
+                        </APPLICATION-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
         </AR-PACKAGE>
     </AR-PACKAGES>
 </AUTOSAR>

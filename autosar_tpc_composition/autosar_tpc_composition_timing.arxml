@@ -1,94 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_tpc_composition
-Model version                : 5.9
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:42 2022
-Model Checksum               : 2079139332 1027854283 3509626394 176740179
+Model version                : 6.1
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:35:46 2022
+Model Checksum               : 203012271 3076287763 3152726382 1956806920
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>Timing</SHORT-NAME>
             <ELEMENTS>
-                <VFB-TIMING UUID="c1b2633f-cd7f-5bc2-d04f-b62fb4bf1c02">
+                <VFB-TIMING UUID="24813f0f-998d-57ad-eebc-06c450df52ed">
                     <SHORT-NAME>TPC_Composition_timing</SHORT-NAME>
                     <TIMING-REQUIREMENTS>
-                        <EXECUTION-ORDER-CONSTRAINT UUID="0307b727-1071-5dce-0d9e-5ca8e2527d65">
+                        <EXECUTION-ORDER-CONSTRAINT UUID="6c64ace3-cbc4-5eba-2b3c-987636eb4b85">
                             <SHORT-NAME>EOC</SHORT-NAME>
-                            <BASE-COMPOSITION-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/TPC_Composition</BASE-COMPOSITION-REF>
+                            <BASE-COMPOSITION-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/TPC_Composition/Components/TPC_Composition</BASE-COMPOSITION-REF>
                             <ORDERED-ELEMENTS>
-                                <EOC-EXECUTABLE-ENTITY-REF UUID="ee21dbda-26fc-5d5b-027f-8963d43a6fe7">
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="9414f8d2-c609-5d7f-3f3a-d24d4cddd9b8">
                                     <SHORT-NAME>PedalSensor_PedalSensor_Step</SHORT-NAME>
                                     <COMPONENT-IREF>
-                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/PedalSensor</TARGET-COMPONENT-REF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/PedalSensor</TARGET-COMPONENT-REF>
                                     </COMPONENT-IREF>
-                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/PedalSensor/PedalSensor_IB/PedalSensor_Step</EXECUTABLE-REF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/PedalSensor/PedalSensor_IB/PedalSensor_Step</EXECUTABLE-REF>
                                     <SUCCESSOR-REFS>
                                         <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/TPC_Composition_timing/EOC/TPS_Primary_ThrottleSensor1_Step</SUCCESSOR-REF>
                                     </SUCCESSOR-REFS>
                                 </EOC-EXECUTABLE-ENTITY-REF>
-                                <EOC-EXECUTABLE-ENTITY-REF UUID="09c2be37-e59b-5cb3-7af8-abc911aad2ad">
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="8be9af5d-4d64-554e-9f5b-f38789e722be">
                                     <SHORT-NAME>TPS_Primary_ThrottleSensor1_Step</SHORT-NAME>
                                     <COMPONENT-IREF>
-                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Primary</TARGET-COMPONENT-REF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Primary</TARGET-COMPONENT-REF>
                                     </COMPONENT-IREF>
-                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/ThrottleSensor1/ThrottleSensor1_IB/ThrottleSensor1_Step</EXECUTABLE-REF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/ThrottleSensor1/ThrottleSensor1_IB/ThrottleSensor1_Step</EXECUTABLE-REF>
                                     <SUCCESSOR-REFS>
                                         <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/TPC_Composition_timing/EOC/TPS_Secondary_ThrottleSensor2_Step</SUCCESSOR-REF>
                                     </SUCCESSOR-REFS>
                                 </EOC-EXECUTABLE-ENTITY-REF>
-                                <EOC-EXECUTABLE-ENTITY-REF UUID="6082bda5-aee1-55cd-016c-468c1c6520e2">
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="688edd67-ee93-5ad5-2a2a-fe80f1df6799">
                                     <SHORT-NAME>TPS_Secondary_ThrottleSensor2_Step</SHORT-NAME>
                                     <COMPONENT-IREF>
-                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/TPS_Secondary</TARGET-COMPONENT-REF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/TPS_Secondary</TARGET-COMPONENT-REF>
                                     </COMPONENT-IREF>
-                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/ThrottleSensor2/ThrottleSensor2_IB/ThrottleSensor2_Step</EXECUTABLE-REF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/ThrottleSensor2/ThrottleSensor2_IB/ThrottleSensor2_Step</EXECUTABLE-REF>
                                     <SUCCESSOR-REFS>
                                         <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/TPC_Composition_timing/EOC/Monitor_ThrottleSensorMonitor_Step</SUCCESSOR-REF>
                                     </SUCCESSOR-REFS>
                                 </EOC-EXECUTABLE-ENTITY-REF>
-                                <EOC-EXECUTABLE-ENTITY-REF UUID="e2fd08b9-78bf-5729-88d4-07e1cccf9cb0">
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="9085c862-a199-5895-163f-f42255fd438f">
                                     <SHORT-NAME>Monitor_ThrottleSensorMonitor_Step</SHORT-NAME>
                                     <COMPONENT-IREF>
-                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Monitor</TARGET-COMPONENT-REF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Monitor</TARGET-COMPONENT-REF>
                                     </COMPONENT-IREF>
-                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/ThrottleSensorMonitor/ThrottleSensorMonitor_IB/ThrottleSensorMonitor_Step</EXECUTABLE-REF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/ThrottleSensorMonitor/ThrottleSensorMonitor_IB/ThrottleSensorMonitor_Step</EXECUTABLE-REF>
                                     <SUCCESSOR-REFS>
                                         <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/TPC_Composition_timing/EOC/Ctrl_Controller_Step</SUCCESSOR-REF>
                                     </SUCCESSOR-REFS>
                                 </EOC-EXECUTABLE-ENTITY-REF>
-                                <EOC-EXECUTABLE-ENTITY-REF UUID="8fd0fcff-0288-596e-74d4-d390d64696bd">
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="d118f05b-78d9-55be-623f-915641816f91">
                                     <SHORT-NAME>Ctrl_Controller_Step</SHORT-NAME>
                                     <COMPONENT-IREF>
-                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl</TARGET-COMPONENT-REF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl</TARGET-COMPONENT-REF>
                                     </COMPONENT-IREF>
-                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/Controller/Controller_IB/Controller_Step</EXECUTABLE-REF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/Controller/Controller_IB/Controller_Step</EXECUTABLE-REF>
                                     <SUCCESSOR-REFS>
                                         <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/TPC_Composition_timing/EOC/Actuator_Actuator_Step</SUCCESSOR-REF>
                                     </SUCCESSOR-REFS>
                                 </EOC-EXECUTABLE-ENTITY-REF>
-                                <EOC-EXECUTABLE-ENTITY-REF UUID="3b70be6c-bb4a-5d13-35f8-8549bf7c06f5">
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="d08a2209-1ed5-5711-1f26-1b981784992f">
                                     <SHORT-NAME>Actuator_Actuator_Step</SHORT-NAME>
                                     <COMPONENT-IREF>
-                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Actuator</TARGET-COMPONENT-REF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Actuator</TARGET-COMPONENT-REF>
                                     </COMPONENT-IREF>
-                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/Actuator/Actuator_IB/Actuator_Step</EXECUTABLE-REF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/Actuator/Actuator_IB/Actuator_Step</EXECUTABLE-REF>
                                     <SUCCESSOR-REFS>
                                         <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/TPC_Composition_timing/EOC/Ctrl2_ctrl2_1_Step</SUCCESSOR-REF>
                                     </SUCCESSOR-REFS>
                                 </EOC-EXECUTABLE-ENTITY-REF>
-                                <EOC-EXECUTABLE-ENTITY-REF UUID="4ccadc11-7a6b-5efa-7dc5-07bd2e589fab">
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="50a71ad2-0b59-5d5b-8de4-9b1c7b00fe89">
                                     <SHORT-NAME>Ctrl2_ctrl2_1_Step</SHORT-NAME>
                                     <COMPONENT-IREF>
-                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/TPC_Composition/Ctrl2</TARGET-COMPONENT-REF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/TPC_Composition/Components/TPC_Composition/Ctrl2</TARGET-COMPONENT-REF>
                                     </COMPONENT-IREF>
-                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/ctrl2/ctrl2_1_IB/ctrl2_1_Step</EXECUTABLE-REF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/ctrl2/ctrl2_1_IB/ctrl2_1_Step</EXECUTABLE-REF>
                                 </EOC-EXECUTABLE-ENTITY-REF>
                             </ORDERED-ELEMENTS>
                         </EXECUTION-ORDER-CONSTRAINT>
                     </TIMING-REQUIREMENTS>
-                    <COMPONENT-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/TPC_Composition</COMPONENT-REF>
+                    <COMPONENT-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/TPC_Composition/Components/TPC_Composition</COMPONENT-REF>
                 </VFB-TIMING>
             </ELEMENTS>
         </AR-PACKAGE>

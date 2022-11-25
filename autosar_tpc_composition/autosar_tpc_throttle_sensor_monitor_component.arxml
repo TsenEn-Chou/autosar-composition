@@ -2,201 +2,206 @@
 <!--
 Auto generated XML Component Description for model autosar_tpc_throttle_sensor_monitor
 Model version                : 5.1
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:05 2022
-Model Checksum               : 100388014 4035382652 1868361011 1504056298
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:34:30 2022
+Model Checksum               : 703097070 776170761 896461193 522936849
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
-            <SHORT-NAME>Components</SHORT-NAME>
-            <ELEMENTS>
-                <APPLICATION-SW-COMPONENT-TYPE UUID="dae82876-00e3-5edf-e268-dd7aae82217c">
-                    <SHORT-NAME>ThrottleSensorMonitor</SHORT-NAME>
-                    <PORTS>
-                        <R-PORT-PROTOTYPE UUID="49f68727-ca84-5ac2-0b73-6f213d34ba57">
-                            <SHORT-NAME>TPS_Primary</SHORT-NAME>
-                            <REQUIRED-COM-SPECS>
-                                <NONQUEUED-RECEIVER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Primary/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
-                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
-                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_float32</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-RECEIVER-COM-SPEC>
-                            </REQUIRED-COM-SPECS>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_Primary</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="961af73e-b475-5e9c-cd19-4cb50ef6e6e4">
-                            <SHORT-NAME>TPS_Secondary</SHORT-NAME>
-                            <REQUIRED-COM-SPECS>
-                                <NONQUEUED-RECEIVER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Secondary/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
-                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
-                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_float32</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-RECEIVER-COM-SPEC>
-                            </REQUIRED-COM-SPECS>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_Secondary</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <P-PORT-PROTOTYPE UUID="c5e21754-c79e-55a1-bd71-0e5f497169a9">
-                            <SHORT-NAME>TPS_Percent</SHORT-NAME>
-                            <PROVIDED-COM-SPECS>
-                                <NONQUEUED-SENDER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Percent/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_float32</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-SENDER-COM-SPEC>
-                            </PROVIDED-COM-SPECS>
-                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/TPS_Percent</PROVIDED-INTERFACE-TREF>
-                        </P-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="2b4327ce-7e6f-593a-a6f3-d04b4cf2b7c0">
-                            <SHORT-NAME>TPS</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticMonitor</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="009c7d8f-dcc3-51ae-91ce-d31d22288528">
-                            <SHORT-NAME>TPS1StuckHigh</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="d58a435e-5c27-568b-8bbb-c58b21ec8039">
-                            <SHORT-NAME>TPS1StuckLow</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="fae4003d-0afd-5d69-84a0-caaae189a1fe">
-                            <SHORT-NAME>TPS2StuckHigh</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <R-PORT-PROTOTYPE UUID="68f235b6-acde-5508-4a02-b7613fded8ba">
-                            <SHORT-NAME>TPS2StuckLow</SHORT-NAME>
-                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                    </PORTS>
-                    <INTERNAL-BEHAVIORS>
-                        <SWC-INTERNAL-BEHAVIOR UUID="e64642cd-32e5-569a-7c2e-b1529f1c4b53">
-                            <SHORT-NAME>ThrottleSensorMonitor_IB</SHORT-NAME>
-                            <EVENTS>
-                                <TIMING-EVENT UUID="b3e09dfe-2bdf-57e9-61d6-ba55dbe4d1a8">
-                                    <SHORT-NAME>Event_ThrottleSensorMonitor_Step</SHORT-NAME>
-                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ThrottleSensorMonitor/ThrottleSensorMonitor_IB/ThrottleSensorMonitor_Step</START-ON-EVENT-REF>
-                                    <PERIOD>0.005</PERIOD>
-                                </TIMING-EVENT>
-                            </EVENTS>
-                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                            <RUNNABLES>
-                                <RUNNABLE-ENTITY UUID="3eadf298-980c-59ea-d103-ee9fa536f7d3">
-                                    <SHORT-NAME>ThrottleSensorMonitor_Init</SHORT-NAME>
-                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
-                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <SYMBOL>ThrottleSensorMonitor_Init</SYMBOL>
-                                </RUNNABLE-ENTITY>
-                                <RUNNABLE-ENTITY UUID="142cf8c2-bef6-50ed-cf87-64be8aead0a7">
-                                    <SHORT-NAME>ThrottleSensorMonitor_Step</SHORT-NAME>
-                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
-                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <DATA-READ-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="fed1b852-0dda-5097-99f4-37d9625f8b77">
-                                            <SHORT-NAME>IN_TPS_Secondary_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS_Secondary</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Secondary/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                        <VARIABLE-ACCESS UUID="3e24a531-9dc6-5100-2aa2-f8700ba5326f">
-                                            <SHORT-NAME>IN_TPS_Primary_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS_Primary</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Primary/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                    </DATA-READ-ACCESSS>
-                                    <DATA-WRITE-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="0ac7f20d-703b-52bd-a318-48b1598548bf">
-                                            <SHORT-NAME>OUT_TPS_Percent_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS_Percent</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/TPS_Percent/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                    </DATA-WRITE-ACCESSS>
-                                    <SERVER-CALL-POINTS>
-                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="8b3ce9ef-ebd9-5cf6-2985-b705593c6caa">
-                                            <SHORT-NAME>SC_TPS1StuckHigh_GetEventFailed</SHORT-NAME>
-                                            <OPERATION-IREF>
-                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS1StuckHigh</CONTEXT-R-PORT-REF>
-                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
-                                            </OPERATION-IREF>
-                                            <TIMEOUT>1.0E-06</TIMEOUT>
-                                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="c848dcab-c220-5bcd-e8f7-0c479556ce2a">
-                                            <SHORT-NAME>SC_TPS1StuckLow_GetEventFailed</SHORT-NAME>
-                                            <OPERATION-IREF>
-                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS1StuckLow</CONTEXT-R-PORT-REF>
-                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
-                                            </OPERATION-IREF>
-                                            <TIMEOUT>1.0E-06</TIMEOUT>
-                                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="27ee829e-634f-5e80-38c9-4dd60935f657">
-                                            <SHORT-NAME>SC_TPS2StuckHigh_GetEventFailed</SHORT-NAME>
-                                            <OPERATION-IREF>
-                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS2StuckHigh</CONTEXT-R-PORT-REF>
-                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
-                                            </OPERATION-IREF>
-                                            <TIMEOUT>1.0E-06</TIMEOUT>
-                                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="1cd6bb32-b480-56d7-e59f-efc35d607310">
-                                            <SHORT-NAME>SC_TPS2StuckLow_GetEventFailed</SHORT-NAME>
-                                            <OPERATION-IREF>
-                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS2StuckLow</CONTEXT-R-PORT-REF>
-                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
-                                            </OPERATION-IREF>
-                                            <TIMEOUT>1.0E-06</TIMEOUT>
-                                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="710eda5b-68f6-572f-aeb5-197d28c9739f">
-                                            <SHORT-NAME>SC_TPS_SetEventStatus</SHORT-NAME>
-                                            <OPERATION-IREF>
-                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/ThrottleSensorMonitor/TPS</CONTEXT-R-PORT-REF>
-                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticMonitor/SetEventStatus</TARGET-REQUIRED-OPERATION-REF>
-                                            </OPERATION-IREF>
-                                            <TIMEOUT>1.0E-06</TIMEOUT>
-                                        </SYNCHRONOUS-SERVER-CALL-POINT>
-                                    </SERVER-CALL-POINTS>
-                                    <SYMBOL>ThrottleSensorMonitor_Step</SYMBOL>
-                                </RUNNABLE-ENTITY>
-                            </RUNNABLES>
-                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                        </SWC-INTERNAL-BEHAVIOR>
-                    </INTERNAL-BEHAVIORS>
-                </APPLICATION-SW-COMPONENT-TYPE>
-            </ELEMENTS>
+            <SHORT-NAME>TPC_Composition</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <APPLICATION-SW-COMPONENT-TYPE UUID="dae82876-00e3-5edf-e268-dd7aae82217c">
+                            <SHORT-NAME>ThrottleSensorMonitor</SHORT-NAME>
+                            <PORTS>
+                                <R-PORT-PROTOTYPE UUID="49f68727-ca84-5ac2-0b73-6f213d34ba57">
+                                    <SHORT-NAME>TPS_Primary</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/TPS_Primary/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_float32</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/TPS_Primary</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="961af73e-b475-5e9c-cd19-4cb50ef6e6e4">
+                                    <SHORT-NAME>TPS_Secondary</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/TPS_Secondary/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_float32</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/TPS_Secondary</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="c5e21754-c79e-55a1-bd71-0e5f497169a9">
+                                    <SHORT-NAME>TPS_Percent</SHORT-NAME>
+                                    <PROVIDED-COM-SPECS>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/TPS_Percent/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_float32</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                    </PROVIDED-COM-SPECS>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/TPS_Percent</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="2b4327ce-7e6f-593a-a6f3-d04b4cf2b7c0">
+                                    <SHORT-NAME>TPS</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticMonitor</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="009c7d8f-dcc3-51ae-91ce-d31d22288528">
+                                    <SHORT-NAME>TPS1StuckHigh</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="d58a435e-5c27-568b-8bbb-c58b21ec8039">
+                                    <SHORT-NAME>TPS1StuckLow</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="fae4003d-0afd-5d69-84a0-caaae189a1fe">
+                                    <SHORT-NAME>TPS2StuckHigh</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <R-PORT-PROTOTYPE UUID="68f235b6-acde-5508-4a02-b7613fded8ba">
+                                    <SHORT-NAME>TPS2StuckLow</SHORT-NAME>
+                                    <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR/Services/Dem/DiagnosticInfo</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                            </PORTS>
+                            <INTERNAL-BEHAVIORS>
+                                <SWC-INTERNAL-BEHAVIOR UUID="e64642cd-32e5-569a-7c2e-b1529f1c4b53">
+                                    <SHORT-NAME>ThrottleSensorMonitor_IB</SHORT-NAME>
+                                    <EVENTS>
+                                        <TIMING-EVENT UUID="b3e09dfe-2bdf-57e9-61d6-ba55dbe4d1a8">
+                                            <SHORT-NAME>Event_ThrottleSensorMonitor_Step</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/ThrottleSensorMonitor/ThrottleSensorMonitor_IB/ThrottleSensorMonitor_Step</START-ON-EVENT-REF>
+                                            <PERIOD>0.005</PERIOD>
+                                        </TIMING-EVENT>
+                                    </EVENTS>
+                                    <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                    <RUNNABLES>
+                                        <RUNNABLE-ENTITY UUID="3eadf298-980c-59ea-d103-ee9fa536f7d3">
+                                            <SHORT-NAME>ThrottleSensorMonitor_Init</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>ThrottleSensorMonitor_Init</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="142cf8c2-bef6-50ed-cf87-64be8aead0a7">
+                                            <SHORT-NAME>ThrottleSensorMonitor_Step</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-READ-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="4c999731-1250-5aab-1f18-2cf2b158cc13">
+                                                    <SHORT-NAME>IN_TPS_Secondary_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS_Secondary</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/TPS_Secondary/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                                <VARIABLE-ACCESS UUID="9a85d48f-41e1-55a3-8962-1944c6d74aa6">
+                                                    <SHORT-NAME>IN_TPS_Primary_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS_Primary</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/TPS_Primary/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-READ-ACCESSS>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="5d1c890c-2e0d-5b71-5e2b-e5d09e13c2dd">
+                                                    <SHORT-NAME>OUT_TPS_Percent_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS_Percent</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/TPS_Percent/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <SERVER-CALL-POINTS>
+                                                <SYNCHRONOUS-SERVER-CALL-POINT UUID="0af642b3-d535-5de7-1fac-03af39fde558">
+                                                    <SHORT-NAME>SC_TPS1StuckHigh_GetEventFailed</SHORT-NAME>
+                                                    <OPERATION-IREF>
+                                                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS1StuckHigh</CONTEXT-R-PORT-REF>
+                                                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
+                                                    </OPERATION-IREF>
+                                                    <TIMEOUT>1.0E-06</TIMEOUT>
+                                                </SYNCHRONOUS-SERVER-CALL-POINT>
+                                                <SYNCHRONOUS-SERVER-CALL-POINT UUID="911ba78e-fcd7-59ad-f244-ab1cd9e1811d">
+                                                    <SHORT-NAME>SC_TPS1StuckLow_GetEventFailed</SHORT-NAME>
+                                                    <OPERATION-IREF>
+                                                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS1StuckLow</CONTEXT-R-PORT-REF>
+                                                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
+                                                    </OPERATION-IREF>
+                                                    <TIMEOUT>1.0E-06</TIMEOUT>
+                                                </SYNCHRONOUS-SERVER-CALL-POINT>
+                                                <SYNCHRONOUS-SERVER-CALL-POINT UUID="6a1c3ff4-28fa-5a7f-29b0-fa28b9b3dced">
+                                                    <SHORT-NAME>SC_TPS2StuckHigh_GetEventFailed</SHORT-NAME>
+                                                    <OPERATION-IREF>
+                                                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS2StuckHigh</CONTEXT-R-PORT-REF>
+                                                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
+                                                    </OPERATION-IREF>
+                                                    <TIMEOUT>1.0E-06</TIMEOUT>
+                                                </SYNCHRONOUS-SERVER-CALL-POINT>
+                                                <SYNCHRONOUS-SERVER-CALL-POINT UUID="9987799f-0313-5d49-8e2d-e92eaad6095c">
+                                                    <SHORT-NAME>SC_TPS2StuckLow_GetEventFailed</SHORT-NAME>
+                                                    <OPERATION-IREF>
+                                                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS2StuckLow</CONTEXT-R-PORT-REF>
+                                                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticInfo/GetEventFailed</TARGET-REQUIRED-OPERATION-REF>
+                                                    </OPERATION-IREF>
+                                                    <TIMEOUT>1.0E-06</TIMEOUT>
+                                                </SYNCHRONOUS-SERVER-CALL-POINT>
+                                                <SYNCHRONOUS-SERVER-CALL-POINT UUID="873527ea-4c4c-5a4c-c79f-e47266f89600">
+                                                    <SHORT-NAME>SC_TPS_SetEventStatus</SHORT-NAME>
+                                                    <OPERATION-IREF>
+                                                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/ThrottleSensorMonitor/TPS</CONTEXT-R-PORT-REF>
+                                                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR/Services/Dem/DiagnosticMonitor/SetEventStatus</TARGET-REQUIRED-OPERATION-REF>
+                                                    </OPERATION-IREF>
+                                                    <TIMEOUT>1.0E-06</TIMEOUT>
+                                                </SYNCHRONOUS-SERVER-CALL-POINT>
+                                            </SERVER-CALL-POINTS>
+                                            <SYMBOL>ThrottleSensorMonitor_Step</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                    </RUNNABLES>
+                                    <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                </SWC-INTERNAL-BEHAVIOR>
+                            </INTERNAL-BEHAVIORS>
+                        </APPLICATION-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
         </AR-PACKAGE>
     </AR-PACKAGES>
 </AUTOSAR>

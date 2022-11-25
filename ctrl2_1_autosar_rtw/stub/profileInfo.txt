@@ -4,4 +4,4 @@
 -Rte_IRead_ctrl2_1_Step_InBus2_Value
 -Rte_IWrite_ctrl2_1_Step_OutBus_Value
 -Rte_IWriteRef_ctrl2_1_Step_OutBus_Value
--Rte_CData_my2d_LkupTbl
+-Rte_CData_L_4x6_single_ar

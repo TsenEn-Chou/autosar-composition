@@ -2,162 +2,167 @@
 <!--
 Auto generated XML Component Description for model autosar_tpc_pedal_sensor
 Model version                : 5.2
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:12 2022
-Model Checksum               : 3244239254 3847471366 157408705 2760778989
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:34:45 2022
+Model Checksum               : 2748374964 804948446 74315419 1214094642
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
-            <SHORT-NAME>Components</SHORT-NAME>
-            <ELEMENTS>
-                <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="4da4b65b-0900-5345-313d-cb6b323c5867">
-                    <SHORT-NAME>PedalSensor</SHORT-NAME>
-                    <PORTS>
-                        <R-PORT-PROTOTYPE UUID="35ac1135-697a-5811-dc3c-b4bd713a5c0d">
-                            <SHORT-NAME>APP_HwIO</SHORT-NAME>
-                            <REQUIRED-COM-SPECS>
-                                <NONQUEUED-RECEIVER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/APP_HwIO/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
-                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
-                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-RECEIVER-COM-SPEC>
-                            </REQUIRED-COM-SPECS>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/APP_HwIO</REQUIRED-INTERFACE-TREF>
-                        </R-PORT-PROTOTYPE>
-                        <P-PORT-PROTOTYPE UUID="a5f1876a-b6cc-5723-f609-cda4787d83ff">
-                            <SHORT-NAME>APP_Percent</SHORT-NAME>
-                            <PROVIDED-COM-SPECS>
-                                <NONQUEUED-SENDER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/APP_Percent/Value</DATA-ELEMENT-REF>
-                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                    <INIT-VALUE>
-                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
-                                            <VALUE>0</VALUE>
-                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                    </INIT-VALUE>
-                                </NONQUEUED-SENDER-COM-SPEC>
-                            </PROVIDED-COM-SPECS>
-                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/APP_Percent</PROVIDED-INTERFACE-TREF>
-                        </P-PORT-PROTOTYPE>
-                    </PORTS>
-                    <INTERNAL-BEHAVIORS>
-                        <SWC-INTERNAL-BEHAVIOR UUID="a9907cef-d8db-5454-9a3b-502dc1bdd8b3">
-                            <SHORT-NAME>PedalSensor_IB</SHORT-NAME>
-                            <DATA-TYPE-MAPPING-REFS>
-                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/DataTypeMappings/PedalSensorDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
-                            </DATA-TYPE-MAPPING-REFS>
-                            <EVENTS>
-                                <TIMING-EVENT UUID="646abad1-6281-5d37-7b36-8ea70bbdddd8">
-                                    <SHORT-NAME>Event_PedalSensor_Step</SHORT-NAME>
-                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/PedalSensor/PedalSensor_IB/PedalSensor_Step</START-ON-EVENT-REF>
-                                    <PERIOD>0.005</PERIOD>
-                                </TIMING-EVENT>
-                            </EVENTS>
-                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
-                            <RUNNABLES>
-                                <RUNNABLE-ENTITY UUID="9fa9e116-b179-5196-f266-a3b921711785">
-                                    <SHORT-NAME>PedalSensor_Init</SHORT-NAME>
-                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
-                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <SYMBOL>PedalSensor_Init</SYMBOL>
-                                </RUNNABLE-ENTITY>
-                                <RUNNABLE-ENTITY UUID="abfaadd5-6c88-5fcd-0483-2d4b4058653b">
-                                    <SHORT-NAME>PedalSensor_Step</SHORT-NAME>
-                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
-                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <DATA-READ-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="de60d964-a636-5fce-57d6-42bf3c117d6a">
-                                            <SHORT-NAME>IN_APP_HwIO_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/PedalSensor/APP_HwIO</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/APP_HwIO/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                    </DATA-READ-ACCESSS>
-                                    <DATA-WRITE-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="2db6994b-a750-5c3d-64f3-2f43871e533a">
-                                            <SHORT-NAME>OUT_APP_Percent_Value</SHORT-NAME>
-                                            <ACCESSED-VARIABLE>
-                                                <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/PedalSensor/APP_Percent</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/APP_Percent/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                </AUTOSAR-VARIABLE-IREF>
-                                            </ACCESSED-VARIABLE>
-                                        </VARIABLE-ACCESS>
-                                    </DATA-WRITE-ACCESSS>
-                                    <PARAMETER-ACCESSS>
-                                        <PARAMETER-ACCESS UUID="37061a21-ec5d-5f46-2d66-23f701ab9a96">
-                                            <SHORT-NAME>SCALPRM_SetpointPercent_LkupTbl</SHORT-NAME>
-                                            <ACCESSED-PARAMETER>
-                                                <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Components/PedalSensor/PedalSensor_IB/SetpointPercent_LkupTbl</LOCAL-PARAMETER-REF>
-                                            </ACCESSED-PARAMETER>
+            <SHORT-NAME>TPC_Composition</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Components</SHORT-NAME>
+                    <ELEMENTS>
+                        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE UUID="4da4b65b-0900-5345-313d-cb6b323c5867">
+                            <SHORT-NAME>PedalSensor</SHORT-NAME>
+                            <PORTS>
+                                <R-PORT-PROTOTYPE UUID="35ac1135-697a-5811-dc3c-b4bd713a5c0d">
+                                    <SHORT-NAME>APP_HwIO</SHORT-NAME>
+                                    <REQUIRED-COM-SPECS>
+                                        <NONQUEUED-RECEIVER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/APP_HwIO/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                            <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                            <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                            <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-RECEIVER-COM-SPEC>
+                                    </REQUIRED-COM-SPECS>
+                                    <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/APP_HwIO</REQUIRED-INTERFACE-TREF>
+                                </R-PORT-PROTOTYPE>
+                                <P-PORT-PROTOTYPE UUID="a5f1876a-b6cc-5723-f609-cda4787d83ff">
+                                    <SHORT-NAME>APP_Percent</SHORT-NAME>
+                                    <PROVIDED-COM-SPECS>
+                                        <NONQUEUED-SENDER-COM-SPEC>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/APP_Percent/Value</DATA-ELEMENT-REF>
+                                            <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                            <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                            <INIT-VALUE>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>DefaultInitValue_Float</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </INIT-VALUE>
+                                        </NONQUEUED-SENDER-COM-SPEC>
+                                    </PROVIDED-COM-SPECS>
+                                    <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/TPC_Composition/Interfaces/APP_Percent</PROVIDED-INTERFACE-TREF>
+                                </P-PORT-PROTOTYPE>
+                            </PORTS>
+                            <INTERNAL-BEHAVIORS>
+                                <SWC-INTERNAL-BEHAVIOR UUID="a9907cef-d8db-5454-9a3b-502dc1bdd8b3">
+                                    <SHORT-NAME>PedalSensor_IB</SHORT-NAME>
+                                    <DATA-TYPE-MAPPING-REFS>
+                                        <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/TPC_Composition/DataTypes/DataTypeMappings/PedalSensorDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                                    </DATA-TYPE-MAPPING-REFS>
+                                    <EVENTS>
+                                        <TIMING-EVENT UUID="646abad1-6281-5d37-7b36-8ea70bbdddd8">
+                                            <SHORT-NAME>Event_PedalSensor_Step</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/TPC_Composition/Components/PedalSensor/PedalSensor_IB/PedalSensor_Step</START-ON-EVENT-REF>
+                                            <PERIOD>0.005</PERIOD>
+                                        </TIMING-EVENT>
+                                    </EVENTS>
+                                    <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                    <RUNNABLES>
+                                        <RUNNABLE-ENTITY UUID="9fa9e116-b179-5196-f266-a3b921711785">
+                                            <SHORT-NAME>PedalSensor_Init</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>PedalSensor_Init</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="abfaadd5-6c88-5fcd-0483-2d4b4058653b">
+                                            <SHORT-NAME>PedalSensor_Step</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <DATA-READ-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="2b6e1132-bd28-5387-d41d-6fe71e220156">
+                                                    <SHORT-NAME>IN_APP_HwIO_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/PedalSensor/APP_HwIO</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/APP_HwIO/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-READ-ACCESSS>
+                                            <DATA-WRITE-ACCESSS>
+                                                <VARIABLE-ACCESS UUID="01d46680-ae73-5e46-beda-d9a55690b4d9">
+                                                    <SHORT-NAME>OUT_APP_Percent_Value</SHORT-NAME>
+                                                    <ACCESSED-VARIABLE>
+                                                        <AUTOSAR-VARIABLE-IREF>
+                                                            <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/TPC_Composition/Components/PedalSensor/APP_Percent</PORT-PROTOTYPE-REF>
+                                                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/APP_Percent/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                        </AUTOSAR-VARIABLE-IREF>
+                                                    </ACCESSED-VARIABLE>
+                                                </VARIABLE-ACCESS>
+                                            </DATA-WRITE-ACCESSS>
+                                            <PARAMETER-ACCESSS>
+                                                <PARAMETER-ACCESS UUID="b3fddfa1-20b8-5142-80db-5ed86eb669c7">
+                                                    <SHORT-NAME>SCALPRM_SetpointPercent_LkupTbl</SHORT-NAME>
+                                                    <ACCESSED-PARAMETER>
+                                                        <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/TPC_Composition/Components/PedalSensor/PedalSensor_IB/SetpointPercent_LkupTbl</LOCAL-PARAMETER-REF>
+                                                    </ACCESSED-PARAMETER>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALPRM-AXIS-SET>
+                                                                    <SW-CALPRM-AXIS>
+                                                                        <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                                        <SW-AXIS-INDIVIDUAL>
+                                                                            <SW-VARIABLE-REFS>
+                                                                                <AUTOSAR-VARIABLE>
+                                                                                    <AUTOSAR-VARIABLE-IREF>
+                                                                                        <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/TPC_Composition/Components/PedalSensor/APP_HwIO</PORT-PROTOTYPE-REF>
+                                                                                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/TPC_Composition/Interfaces/APP_HwIO/Value</TARGET-DATA-PROTOTYPE-REF>
+                                                                                    </AUTOSAR-VARIABLE-IREF>
+                                                                                </AUTOSAR-VARIABLE>
+                                                                            </SW-VARIABLE-REFS>
+                                                                        </SW-AXIS-INDIVIDUAL>
+                                                                    </SW-CALPRM-AXIS>
+                                                                </SW-CALPRM-AXIS-SET>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                </PARAMETER-ACCESS>
+                                            </PARAMETER-ACCESSS>
+                                            <SYMBOL>PedalSensor_Step</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                    </RUNNABLES>
+                                    <SHARED-PARAMETERS>
+                                        <PARAMETER-DATA-PROTOTYPE UUID="9167b83e-3fbb-5970-3ffd-10aaa54d819d">
+                                            <SHORT-NAME>SetpointPercent_LkupTbl</SHORT-NAME>
+                                            <CATEGORY>CURVE</CATEGORY>
                                             <SW-DATA-DEF-PROPS>
                                                 <SW-DATA-DEF-PROPS-VARIANTS>
                                                     <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        <SW-CALPRM-AXIS-SET>
-                                                            <SW-CALPRM-AXIS>
-                                                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
-                                                                <SW-AXIS-INDIVIDUAL>
-                                                                    <SW-VARIABLE-REFS>
-                                                                        <AUTOSAR-VARIABLE>
-                                                                            <AUTOSAR-VARIABLE-IREF>
-                                                                                <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/PedalSensor/APP_HwIO</PORT-PROTOTYPE-REF>
-                                                                                <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/APP_HwIO/Value</TARGET-DATA-PROTOTYPE-REF>
-                                                                            </AUTOSAR-VARIABLE-IREF>
-                                                                        </AUTOSAR-VARIABLE>
-                                                                    </SW-VARIABLE-REFS>
-                                                                </SW-AXIS-INDIVIDUAL>
-                                                            </SW-CALPRM-AXIS>
-                                                        </SW-CALPRM-AXIS-SET>
+                                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
                                                     </SW-DATA-DEF-PROPS-CONDITIONAL>
                                                 </SW-DATA-DEF-PROPS-VARIANTS>
                                             </SW-DATA-DEF-PROPS>
-                                        </PARAMETER-ACCESS>
-                                    </PARAMETER-ACCESSS>
-                                    <SYMBOL>PedalSensor_Step</SYMBOL>
-                                </RUNNABLE-ENTITY>
-                            </RUNNABLES>
-                            <SHARED-PARAMETERS>
-                                <PARAMETER-DATA-PROTOTYPE UUID="9167b83e-3fbb-5970-3ffd-10aaa54d819d">
-                                    <SHORT-NAME>SetpointPercent_LkupTbl</SHORT-NAME>
-                                    <CATEGORY>CURVE</CATEGORY>
-                                    <SW-DATA-DEF-PROPS>
-                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
-                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                    </SW-DATA-DEF-PROPS>
-                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataTypes/ApplDataTypes/Appl_SetpointPercent_LkupTbl</TYPE-TREF>
-                                    <INIT-VALUE>
-                                        <CONSTANT-REFERENCE>
-                                            <SHORT-LABEL>SetpointPercent_LkupTbl</SHORT-LABEL>
-                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/DataTypes/Constants/SetpointPercent_LkupTbl</CONSTANT-REF>
-                                        </CONSTANT-REFERENCE>
-                                    </INIT-VALUE>
-                                </PARAMETER-DATA-PROTOTYPE>
-                            </SHARED-PARAMETERS>
-                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
-                        </SWC-INTERNAL-BEHAVIOR>
-                    </INTERNAL-BEHAVIORS>
-                </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
-            </ELEMENTS>
+                                            <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/TPC_Composition/DataTypes/ApplDataTypes/Appl_SetpointPercent_LkupTbl</TYPE-TREF>
+                                            <INIT-VALUE>
+                                                <CONSTANT-REFERENCE>
+                                                    <SHORT-LABEL>SetpointPercent_LkupTbl</SHORT-LABEL>
+                                                    <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/TPC_Composition/DataTypes/Constants/SetpointPercent_LkupTbl</CONSTANT-REF>
+                                                </CONSTANT-REFERENCE>
+                                            </INIT-VALUE>
+                                        </PARAMETER-DATA-PROTOTYPE>
+                                    </SHARED-PARAMETERS>
+                                    <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                </SWC-INTERNAL-BEHAVIOR>
+                            </INTERNAL-BEHAVIORS>
+                        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
         </AR-PACKAGE>
     </AR-PACKAGES>
 </AUTOSAR>

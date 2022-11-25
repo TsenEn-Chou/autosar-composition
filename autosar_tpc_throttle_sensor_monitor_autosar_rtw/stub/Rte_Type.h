@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "ThrottleSensorMonitor"
    ARXML schema: "4.3"
-   File generated on: "25-Apr-2022 13:25:37"  */
+   File generated on: "25-Nov-2022 16:34:22"  */
 
 #ifndef Rte_Type_h
 #define Rte_Type_h

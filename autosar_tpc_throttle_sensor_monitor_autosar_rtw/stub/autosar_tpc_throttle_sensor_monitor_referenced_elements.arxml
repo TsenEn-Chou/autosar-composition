@@ -2,9 +2,9 @@
 <!--
 Auto generated XML Component Description for model autosar_tpc_throttle_sensor_monitor
 Model version                : 5.1
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:03 2022
-Model Checksum               : 100388014 4035382652 1868361011 1504056298
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:34:25 2022
+Model Checksum               : 703097070 776170761 896461193 522936849
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>

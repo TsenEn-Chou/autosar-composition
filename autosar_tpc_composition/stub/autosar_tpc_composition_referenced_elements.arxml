@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_tpc_composition
-Model version                : 5.9
-Simulink Coder version       : Simulink Coder 9.7 (R2022a) 13-Nov-2021
-XML source code generated on : Mon Jul 18 15:53:43 2022
-Model Checksum               : 2079139332 1027854283 3509626394 176740179
+Model version                : 6.1
+Simulink Coder version       : Simulink Coder 9.8 (R2022b) 13-May-2022
+XML source code generated on : Fri Nov 25 16:35:47 2022
+Model Checksum               : 203012271 3076287763 3152726382 1956806920
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-1.xsd">
     <AR-PACKAGES>
@@ -273,7 +273,7 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                         <SW-DATA-DEF-PROPS-VARIANTS>
                             <SW-DATA-DEF-PROPS-CONDITIONAL>
                                 <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
-                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/TPC_Composition/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
                                 <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/dc_25047333</DATA-CONSTR-REF>
                             </SW-DATA-DEF-PROPS-CONDITIONAL>
                         </SW-DATA-DEF-PROPS-VARIANTS>
@@ -1607,7 +1607,6 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                                                     <SW-DATA-DEF-PROPS>
                                                         <SW-DATA-DEF-PROPS-VARIANTS>
                                                             <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
                                                                 <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
                                                             </SW-DATA-DEF-PROPS-CONDITIONAL>
                                                         </SW-DATA-DEF-PROPS-VARIANTS>
@@ -1635,7 +1634,6 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                                                     <SW-DATA-DEF-PROPS>
                                                         <SW-DATA-DEF-PROPS-VARIANTS>
                                                             <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
                                                                 <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
                                                             </SW-DATA-DEF-PROPS-CONDITIONAL>
                                                         </SW-DATA-DEF-PROPS-VARIANTS>
@@ -1663,7 +1661,6 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                                                     <SW-DATA-DEF-PROPS>
                                                         <SW-DATA-DEF-PROPS-VARIANTS>
                                                             <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
                                                                 <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
                                                             </SW-DATA-DEF-PROPS-CONDITIONAL>
                                                         </SW-DATA-DEF-PROPS-VARIANTS>
@@ -1802,16 +1799,6 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                     <SHORT-NAME>BaseTypes</SHORT-NAME>
                     <ELEMENTS>
                         <SW-BASE-TYPE>
-                            <SHORT-NAME>float32</SHORT-NAME>
-                            <LONG-NAME>
-                                <L-4 L="EN">Float</L-4>
-                            </LONG-NAME>
-                            <CATEGORY>FIXED_LENGTH</CATEGORY>
-                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
-                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
-                            <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
-                        </SW-BASE-TYPE>
-                        <SW-BASE-TYPE>
                             <SHORT-NAME>boolean</SHORT-NAME>
                             <LONG-NAME>
                                 <L-4 L="EN">Boolean</L-4>
@@ -1882,6 +1869,16 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                             <NATIVE-DECLARATION>sint32</NATIVE-DECLARATION>
                         </SW-BASE-TYPE>
                         <SW-BASE-TYPE>
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
                             <SHORT-NAME>float64</SHORT-NAME>
                             <LONG-NAME>
                                 <L-4 L="EN">Float</L-4>
@@ -1930,20 +1927,6 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                 <AR-PACKAGE>
                     <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
                     <ELEMENTS>
-                        <IMPLEMENTATION-DATA-TYPE>
-                            <SHORT-NAME>float32</SHORT-NAME>
-                            <LONG-NAME>
-                                <L-4 L="EN">Float</L-4>
-                            </LONG-NAME>
-                            <CATEGORY>VALUE</CATEGORY>
-                            <SW-DATA-DEF-PROPS>
-                                <SW-DATA-DEF-PROPS-VARIANTS>
-                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/float32</BASE-TYPE-REF>
-                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                </SW-DATA-DEF-PROPS-VARIANTS>
-                            </SW-DATA-DEF-PROPS>
-                        </IMPLEMENTATION-DATA-TYPE>
                         <IMPLEMENTATION-DATA-TYPE>
                             <SHORT-NAME>boolean</SHORT-NAME>
                             <LONG-NAME>
@@ -2039,6 +2022,20 @@ Model Checksum               : 2079139332 1027854283 3509626394 176740179
                                 <SW-DATA-DEF-PROPS-VARIANTS>
                                     <SW-DATA-DEF-PROPS-CONDITIONAL>
                                         <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/sint32</BASE-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>float32</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Float</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/float32</BASE-TYPE-REF>
                                     </SW-DATA-DEF-PROPS-CONDITIONAL>
                                 </SW-DATA-DEF-PROPS-VARIANTS>
                             </SW-DATA-DEF-PROPS>
